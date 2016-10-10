@@ -1,0 +1,135 @@
+﻿doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title Homapage
+  body
+    header
+      nav#top-nav
+        a:img(alt='Logo')
+        input(type='text')
+        a(href='#') Search
+        a(href='#') Sign In / Register
+      nav#bottom-nav
+        #socialNetworkIconBarTop
+          a(href='#') Facebook
+          a(href='#') Twitter
+          a(href='#') g+
+      #menuBar
+        ul#menuItemLvl1
+          li
+            a(href='#') New Arrivals
+          li
+            a(href='#')
+              | All Sections
+              ul#menuLvl2
+                li#menuItemLvl2
+                  a(href='#') Section 1
+                li#menuItemLvl2
+                  a(href='#') Section 2
+                li#menuItemLvl2
+                  a(href='#') Section 3
+          li
+            a(href='#') Custom PC
+          li
+            a(href='#') Offers
+        #div-cart
+          a(href='#') Cart
+    div
+      span(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+        a(href='/', title='Ir a la página de inicio', itemprop='url')
+        span(itemprop='title') Inicio
+      |  >
+      span(itemprop='child', itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+        a(href='/n1/', title='Ir n1', itemprop='url')
+        span(itemprop='title') Nivel 1
+      |  >
+      span(itemprop='child', itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+        a(href='/nivel1/nivel2/', title='Ir a nivel 2', itemprop='url')
+        span(itemprop='title') Nivel II
+      |  >
+    aside
+      form
+      fieldset
+        legend Personaliza tu búsqueda:
+        | 	  Filtro1:
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        | 	  Filtro2:
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        | 	  Filtro3:
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+        input(type='checkbox')
+        br
+    main
+      #centro
+        .imagenes
+          a(href='/')
+            img(src='', alt='producto1')
+          p Descripcion
+          p Precio
+        .imagenes
+          a(href='/')
+            img(src='', alt='producto1')
+          p Descripcion
+          p Precio
+        .imagenes
+          a(href='/')
+            img(src='', alt='producto1')
+          p Descripcion
+          p Precio
+        .imagenes
+          a(href='/')
+            img(src='', alt='producto1')
+          p Descripcion
+          p Precio
+        .imagenes
+          a(href='/')
+            img(src='', alt='producto1')
+          p Descripcion
+          p Precio
+        .imagenes
+          a(href='/')
+            img(src='')
+          p Descripcion
+          p Precio
+    footer
+      .div-footer
+        a(href='#') Return and Exchanges
+        a(href='#') Terms Of Services
+        a(href='#') Contact
+        a(href='#') About
+      .div-footer
+        #div-map
+          a(href='#') Company Info
+          a(href='#')
+            img(alt='Map Location')
+        #socialNetworkIconBarBottom
+          a(href='#') Facebook
+          a(href='#') Twitter
+          a(href='#') g+
+      .div-footer
+        p Lorem...

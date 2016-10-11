@@ -1,0 +1,57 @@
+﻿//instalar npm install pug-cli -g
+//compilar pug -P Contacto.pug
+
+doctype html
+
+html
+	head
+		meta(charset='utf-8')
+		title = pageTitle
+	body
+	.contenedor
+		.cabezera
+			h1 Formulario de contacto
+		.cuerpo
+			p
+				label(for='cs1') Tema de consulta
+				select#cs1
+					option(value='Problemas con el registro') Problemas con el registro
+					option(value='Problemas con mi saldo') Problemas con mi saldo
+					option(value='Error al finalizar la compra') Error al finalizar la compra
+					option(value='Otro') Otro 
+			p
+				label(for='cs2') Nombre
+				input(
+				type='textbox'
+				name='Nombre'
+				id='cs2'
+				)
+			p
+				label(for='cs3') Correo electrónico
+				input(
+				type='textbox'
+				name='Correo'
+				id='cs3'
+				)
+			p
+				label(for='cs4') Consulta
+				input(
+				type='textbox'
+				name='Consulta'
+				id='cs4'
+				)
+			p
+				label(for='cs5') Teléfono
+				type='textbox'
+				input(
+				name='Teléfono'
+				id='cs5'
+				)
+			input(
+			type='checkbox'
+			name='agreement'
+			id='input1'
+			)
+			label(for='input1') He leído y acepto los términos de privacidad y las condiciones de uso
+			.boton
+				input(type='submit' value='Entrar')

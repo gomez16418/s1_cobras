@@ -1,0 +1,59 @@
+﻿- snList = ["Facebook", "Twitter", "g+"]
+- sectionsList = ["Section 1", "Section 2", "Section 3"]
+- menuList = ["New Arrivals", sectionsList, "Custom PC", "Offers"]
+- const nSections = 3
+- ftLinksList = ["Return and Exchanges", "Terms Of Services", "Contact", "About"]
+
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		title="Homapage"
+	body
+		header
+			nav#top-nav
+				a(href="Index.html"): img(alt="Logo")
+				input(type="text")
+				a(href="#")="Search"
+				a(href="login.html")="Sign In / Register"
+			nav#bottom-nav
+				#socialNetworkIconBarTop
+					each item in snList
+						a(href="#")=item
+				#menuBar
+					ul#menuItemLvl1
+						each item in menuList
+							if(Array.isArray(item))
+								li: a(href="1_LEVEL.html")="All Sections"
+									ul#menuLvl2
+										each item in sectionsList
+											li#menuItemLvl2: a(href="segundoNivel.html")=item
+							else
+								li: a(href="#")=item
+				#div-cart: a(href="#")="Cart"
+		main
+			#sectionsContainer
+				- for(var x = 1; x <= nSections; x++)
+					section.news
+			#adsContainer
+				a(href="#"): img(alt="Ads")
+		footer
+			- for(var x = 0; x < 3; x++)
+				.div-footer
+					case x
+						when 0
+							each item in ftLinksList
+								if(item == "Contact")
+									a(href="contacto.html")=item
+								else
+									a(href="#")=item
+						when 1
+							#div-map
+								a(href="localizacion.html")="Company Info"
+								a(href="localizacion.html"): img(alt="Map Location")
+							#socialNetworkIconBarBottom
+								each item in snList
+									a(href="#")=item
+						when 2
+							p="Lorem..."

@@ -1,0 +1,47 @@
+﻿doctype html
+html
+	head
+		meta(charset='utf-8')
+		title Sign-in/Sign-up
+	body
+		.cabecera
+			a(href='index.html'): img(src='logo.jpg')
+			.social
+				a(href='twitter.com'): img(src='twitter.jpg')
+				a(href='facebook.com'): img(src='facebook.jpg')
+			
+		.cuerpo
+			.textoLogin
+				h1 Sign-in/Sign-up
+			.entrar
+				p
+					label(for='user') Usuario
+					input(type='text' name='usuario' id='user')
+				p
+					label(for='password') Password
+					input(type='password' name='pass' id='password')
+				p
+					input(type='checkbox' id='recordarPass')
+					label(for='recordarPass') Recordar contraseña
+
+				input(type='submit' value='Entrar')
+				
+			.registro
+				p
+					label(for='newuser') Nombre Usuario
+					input(type='text' name='usuario' id='newuser')
+				p
+					label(for='newPass') Password
+					input(type='password' name='password' id='newPass')
+				p
+					label(for='newEmail') e-Mail
+					input(type='text' name='email' id='newEmail')
+				p
+					input(type='checkbox' id='aceptar')
+					label(for='aceptar') He leído y acepto la política de privacidad
+					
+				input(type='submit' value='Registrarse')
+				
+			p
+			label(for='recuperacionPass') ¿Olvidó su contraseña?
+			a(href='correoderecuperacion' id='recuperacionPass') Pulse aquí

@@ -1,0 +1,83 @@
+
+<!--instalar npm install pug-cli -g-->
+<!--compilar pug -P Contacto.pug--><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contacto</title>
+    <header>
+      <nav id="top-nav"><a href="Index.html"><img alt="Logo"></a>
+        <input type="text"><a href="#">Search</a><a href="login.html">Sign In / Register</a>
+      </nav>
+      <nav id="bottom-nav">
+        <div id="socialNetworkIconBarTop"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a>
+        </div>
+        <div id="menuBar">
+          <ul id="menuItemLvl1">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="1_LEVEL.html">All Sections
+                <ul id="menuLvl2">
+                  <li id="menuItemLvl2"><a href="segundoNivel.html">Section 1</a></li>
+                  <li id="menuItemLvl2"><a href="segundoNivel.html">Section 2</a></li>
+                  <li id="menuItemLvl2"><a href="segundoNivel.html">Section 3</a></li>
+                </ul></a></li>
+            <li><a href="#">Custom PC</a></li>
+            <li><a href="#">Offers</a></li>
+          </ul>
+        </div>
+        <div id="div-cart"><a href="#">Cart</a></div>
+      </nav>
+    </header>
+  </head>
+  <body></body>
+  <div class="contenedor">
+    <div class="cabezera">
+      <h1>Formulario de contacto</h1>
+    </div>
+    <div class="cuerpo">
+      <p>
+        <label for="cs1">Tema de consulta</label>
+        <select id="cs1">
+          <option value="Problemas con el registro">Problemas con el registro</option>
+          <option value="Problemas con mi saldo">Problemas con mi saldo</option>
+          <option value="Error al finalizar la compra">Error al finalizar la compra</option>
+          <option value="Otro">Otro </option>
+        </select>
+      </p>
+      <p>
+        <label for="cs2">Nombre</label>
+        <input type="textbox" name="Nombre" id="cs2">
+      </p>
+      <p>
+        <label for="cs3">Correo electrónico</label>
+        <input type="textbox" name="Correo" id="cs3">
+      </p>
+      <p>
+        <label for="cs4">Consulta</label>
+        <input type="textbox" name="Consulta" id="cs4">
+      </p>
+      <p>
+        <label for="cs5">Teléfono</label>
+        <type>textbox</type>
+        <input name="Teléfono" id="cs5">
+      </p>
+      <input type="checkbox" name="agreement" id="input1">
+      <label for="input1">He leído y acepto los términos de privacidad y las condiciones de uso</label>
+      <div class="boton">
+        <input type="submit" value="Entrar">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="div-footer"><a href="#">Return and Exchanges</a><a href="#">Terms Of Services</a><a href="contacto.html">Contact</a><a href="#">About</a>
+    </div>
+    <div class="div-footer">
+      <div id="div-map"><a href="localizacion.html">Company Info</a><a href="localizacion.html"><img alt="Map Location"></a></div>
+      <div id="socialNetworkIconBarBottom"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a>
+      </div>
+    </div>
+    <div class="div-footer">
+      <p>Lorem...</p>
+    </div>
+  </footer>
+</html>

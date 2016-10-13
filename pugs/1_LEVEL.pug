@@ -13,7 +13,7 @@ html
 	body
 		header
 			nav#top-nav
-				a:img(alt="Logo")
+				a: img(alt="Logo")
 				input(type="text")
 				a(href="#")="Search"
 				a(href="#")="Sign In / Register"
@@ -48,11 +48,14 @@ html
 					case x
 						when 0
 							each item in ftLinksList
-								a(href="#")=item
+								if(item == "Contact")
+									a(href="contacto.html")=item
+								else
+									a(href="#")=item
 						when 1
 							#div-map
-								a(href="#")="Company Info"
-								a(href="#"): img(alt="Map Location")
+								a(href="localizacion.html")="Company Info"
+								a(href="localizacion.html"): img(alt="Map Location")
 							#socialNetworkIconBarBottom
 								each item in snList
 									a(href="#")=item

@@ -14,33 +14,35 @@ html
 			.textoLogin
 				h1 Sign-in/Sign-up
 			.entrar
-				p
-					label(for='user') Usuario
-					input(type='text' name='usuario' id='user')
-				p
-					label(for='password') Password
-					input(type='password' name='pass' id='password')
-				p
-					input(type='checkbox' id='recordarPass')
-					label(for='recordarPass') Recordar contraseña
+				form(id="form-login" action="" method="post")
+					p
+						label(for='user') Usuario
+						input(type='text' name='usuario' id='user')
+					p
+						label(for='password') Password
+						input(type='password' name='pass' id='password')
+					p
+						input(type='checkbox' id='recordarPass')
+						label(for='recordarPass') Recordar contraseña
 
-				input(type='submit' value='Entrar')
+					input(type='submit' value='Entrar')
 				
 			.registro
-				p
-					label(for='newuser') Nombre Usuario
-					input(type='text' name='usuario' id='newuser')
-				p
-					label(for='newPass') Password
-					input(type='password' name='password' id='newPass')
-				p
-					label(for='newEmail') e-Mail
-					input(type='text' name='email' id='newEmail')
-				p
-					input(type='checkbox' id='aceptar')
-					label(for='aceptar') He leído y acepto la política de privacidad
-					
-				input(type='submit' value='Registrarse')
+				form(id="form-registro" action="" method="post")
+					p
+						label(for='newuser') Nombre Usuario
+						input(type='text' name='usuario' id='newuser')
+					p
+						label(for='newPass') Password
+						input(type='password' name='password' id='newPass')
+					p
+						label(for='newEmail') e-Mail
+						input(type='text' name='email' id='newEmail')
+					p
+						input(type='checkbox' id='aceptar')
+						label(for='aceptar') He leído y acepto la política de privacidad
+						
+					input(type='submit' value='Registrarse')
 				
 			p
 			label(for='recuperacionPass') ¿Olvidó su contraseña?

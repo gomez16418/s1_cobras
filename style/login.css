@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body >div {
+    width: 90%;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body > header{
+    background: #0f1112;
+    order: 1;
+    height: 100px;
+    flex:100%;
+}
+
+
+body > main{
+    background: #545b61;
+    order: 2;
+    height: auto;
+    flex: 100%;
+    padding: 30px;
+}
+
+h1{
+    color: #0f1112;
+    text-align: center;
+}
+
+.registro{
+    
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #c7c8c9;
+    padding: 15px;
+    border: 1px solid #8fff00;
+}
+
+.entrar{
+    display: none;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #c7c8c9;
+    padding: 15px;
+    border: 1px solid #8fff00;
+}
+
+input[type=text],
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    
+}
+
+.recuperarPass{
+    padding: 15px;
+    text-align: center;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #c7c8c9;
+    border: 1px solid #8fff00;
+}
+
+label[for=user], label[for=password], label[for=newuser], label[for=newPass], label[for=newEmail]{
+    display: none;
+}
+
+.social{
+    margin-left: 10px;
+    margin-top: 42px;
+}
+
+img{
+    height: 25px;
+    padding: 2px;
+}
+
+.nav-item{
+    display: table;
+    
+   
+}
+.nav-entrar, .nav-registrar{
+    
+    display: table-cell;
+    float: none;
+    width: 50%;
+    text-align: center;
+}

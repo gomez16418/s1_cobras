@@ -2,10 +2,12 @@
 <!--compilar pug -P Contacto.pug-->
 <!DOCTYPE html>
 <html>
+<div class="pagina">
   <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-with, initial-scale=1">
-    <link rel=stylesheet href="style/cssEdu/contacto.css">
+      <script type="text/javascript" src="../javascript/contacto.js"></script>
+    <link rel=stylesheet href="../style/cssEdu/contacto.css">
     <title>Contacto</title>
     <header>
       <nav id="top-nav"><a href="Index.html"><img alt="Logo"></a>
@@ -33,13 +35,12 @@
   </head>
   <body></body>
   <div class="contenedor">
-    <div class="cabezera">
-      <h1>Formulario de contacto</h1>
-    </div>
     <div class="cuerpo">
+    <div class="cabecera">
+      <h2>Formulario de contacto</h2>
+    </div>
       <p>
-        <label for="cs1">Tema de consulta</label>
-        <select id="cs1">
+        <select class="combo" id="cs1">
           <option value="Problemas con el registro">Problemas con el registro</option>
           <option value="Problemas con mi saldo">Problemas con mi saldo</option>
           <option value="Error al finalizar la compra">Error al finalizar la compra</option>
@@ -47,28 +48,26 @@
         </select>
       </p>
       <p>
-        <label for="cs2">Nombre</label>
-        <input type="text" name="Nombre" id="cs2">
+        <input placeholder="Nombre" type="text" name="Nombre" id="cs2">
       </p>
       <p>
-        <label for="cs3">Correo electrónico</label>
-        <input type="text" name="Correo" id="cs3">
+        <input placeholder="Correo Electrónico" type="text" name="Correo" id="cs3">
       </p>
       <p>
-        <label for="cs4">Consulta</label>
-        <input type="text" name="Consulta" id="cs4">
+        <input placeholder="Teléfono"type="text" name="Consulta" id="cs4">
       </p>
       <p>
-        <label for="cs5">Teléfono</label>
-        <input type="text" name="Teléfono" id="cs5">
+        <input placeholder="Consulta" type="text" name="Teléfono" id="cs5">
       </p>
       <input type="checkbox" name="agreement" id="input1" checked="checked">
       <label for="input1">He leído y acepto los términos de privacidad y las condiciones de uso</label>
-      <div class="boton">
-        <button type="submit">Entrar</button>
+      <div class="boton" id="btn">
+          <button type="button" onclick="ocultarBoton()">Entrar</button>
+      </div>
+      <div class="loader" id="load">
+      </div>
       </div>
     </div>
-  </div>
   <footer>
     <div class="div-footer"><a href="#">Return and Exchanges</a><a href="#">Terms Of Services</a><a href="contacto.html">Contact</a><a href="#">About</a>
     </div>
@@ -81,4 +80,5 @@
       <p>Lorem...</p>
     </div>
   </footer>
+</div>
 </html>

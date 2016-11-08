@@ -7,7 +7,28 @@
   </head>
     
     <script>
-      
+        function openTab(evt, login)
+        {
+            var i, tabcontent, tablinks;
+            
+            tabcontent=document.getElementsByClassName("tabcontent");
+            for(i=0;i<tabcontent.length;i++)
+            {
+                tabcontent[i].style.display="none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(login).style.display = "block";
+            evt.currentTarget.className += " active";
+            
+        }
+        
+        document.getElementById("default").click();
+        
     </script>
   <body>
       
@@ -21,12 +42,12 @@
             
             <div class="tabs">
                 <ul class="tab">
-                    <li><a href="javascript:void(0)" class="tablinks" >Entrar</a></li>
-                    <li><a href="javascript:void(0)" class="tablinks">Registrarse</a></li>
+                    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'entrar')" id="default" >Entrar</a></li>
+                    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</a></li>
                 </ul>
             </div>
             
-            <div class="entrar">
+            <div id="entrar" class="tabcontent">
             
             <form id="form-login" action="" method="post">
               <p>
@@ -44,7 +65,7 @@
             <input type="submit" value="Entrar">
             </form>
             </div>
-            <div class="registro">
+            <div id="registrarse" class="tabcontent">
             <p>* Los campos son oligatorios</p>
             <form id="form-registro" action="" method="post">
               <p>

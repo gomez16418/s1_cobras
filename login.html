@@ -6,30 +6,7 @@
     <link rel="stylesheet" href="/style/login.css" type="text/css">
   </head>
     
-    <script>
-        function openTab(evt, login)
-        {
-            var i, tabcontent, tablinks;
-            
-            tabcontent=document.getElementsByClassName("tabcontent");
-            for(i=0;i<tabcontent.length;i++)
-            {
-                tabcontent[i].style.display="none";
-            }
-            
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            
-            document.getElementById(login).style.display = "block";
-            evt.currentTarget.className += " active";
-            
-        }
-        
-        document.getElementById("default").click();
-        
-    </script>
+    
   <body>
       
         <header><a href="Index.html"><img src="logo.jpg"></a>
@@ -93,5 +70,31 @@
                 <label for="recuperacionPass">¿Olvidó su contraseña?</label><a href="correoderecuperacion" id="recuperacionPass">Pulse aquí</a>
             </div>
     </main>
+      <script>
+        function openTab(evt, login)
+        {
+            var i, tabcontent, tablinks;
+            
+            tabcontent=document.getElementsByClassName("tabcontent");
+            for(i=0;i<tabcontent.length;i++)
+            {
+                tabcontent[i].style.display="none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(login).style.display = "block";
+            evt.currentTarget.className += " active";
+            
+        }
+        
+        document.getElementById("default").click();
+        
+        
+    </script>
+      
   </body>
 </html>

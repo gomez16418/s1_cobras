@@ -1,6 +1,6 @@
 
 ul.tab {
-    width: 53.5%;
+    width: 55%;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
@@ -11,6 +11,8 @@ ul.tab {
     height: 45px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 ul.tab li{float: left;}
@@ -73,7 +75,8 @@ h1{
     margin-left: auto;
     margin-right: auto;
     background: #c7c8c9;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     border: 1px solid #8fff00;
     border-bottom: 0px;
 }

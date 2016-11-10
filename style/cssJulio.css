@@ -4,7 +4,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
+ul{list-style:none}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:none}
 a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
@@ -16,18 +16,12 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
-@import url(./cssAntonio.css);
-@import url(./cssEdu.css);
-@import url(./cssCecilia.css);
-@import url(./cssJulio.css);
-@import url(./cssVladis.css);
-
 #flexWrapper {
 	display: flex;
 	flex-flow: row wrap;
 }
 #flexWrapper > * {
-	background: #CCC;
+	background: #AAA;
 	border-radius: 5px;
 	margin:5px;
 	/*====================*/
@@ -36,26 +30,145 @@ input,select{vertical-align:middle}
 #flexWrapper > header {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: stretch;
+	position: fixed;
+	margin:0;
+	height: 60px;
+	background: #FDD;
 }
-#flexWrapper > header > #menuBar {
-	order: 1;
+#flexWrapper > #capaHeader
+{
+	height: 50px;
+}
+
+/*===================*/
+/* ELEMENTOS DEL HEADER */
+/*===================*/
+#flexWrapper > header > * {
+	position: absolute;
+	height: 60px;
 }
 #flexWrapper > header > a {
 	order: 2;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
 }
-#flexWrapper > header > #searchLoginWrappper {
+#flexWrapper > header > #searchWrapper {
 	order: 3;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	right: 260px;
 }
+#flexWrapper > header > #searchWrapper > a {
+	font-size: xx-large;		
+}
+
+#flexWrapper > header > #loginWrapper {
+	order: 4;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	right: 10px;
+}
+#flexWrapper > header > #loginWrapper > a {
+	font-size: xx-large;		
+}
+
 #flexWrapper > header > #socialNetworkIconBarTop {
 	display: none;
 }
-#flexWrapper > header > #searchLoginWrappper > input {
+#flexWrapper > header > #searchWrapper > input {
 	display: none;
 }
 #flexWrapper > header > #cartWrapper {
-	order: 4;
+	order: 5;
 }
-#flexWrapper > header > a > img {
-	width:10vw;
-	height:5vw;
+
+
+/*===================*/
+/*       MENU        */
+/*===================*/
+#flexWrapper > header > #menuBar {
+	background: #CCC;
+	border-radius: 5px;
+	/*========*/
+	/*order: 1;*/
+	/*========*/
+	z-index: 100;
 }
+
+
+
+.dropdown-content {
+	display: none;
+}
+
+.dropdown-content li{
+	background-color: #FAA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    min-height: 30px;
+    text-align: left;
+}
+.dropdown-content li > input {
+	height: 30px;
+}
+.dropdown-content li > a {
+	line-height: 30px;
+	margin-left: 5px;
+	font-size: 18px;
+}
+a,
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+	color:#FFF;
+}
+
+.show {
+	display: block;
+}
+.desplegado{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+}
+
+.dropbtn {
+    background-color: #F88;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    height: 100%;
+    text-align: left;
+}
+
+#menuIcon {
+	font-size: 40px;
+	text-align: left;
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*==================*/
+/*      LOGO        */
+/*==================*/
+
+#logo {
+	left:60px;
+}
+
+/*#imgLogo {
+	height: 80px;
+	width: 150px;
+}*/

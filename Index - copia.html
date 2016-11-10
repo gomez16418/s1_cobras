@@ -6,29 +6,40 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Homapage</title>
     <link rel=stylesheet href="style/cssJulio.css">
+    <script src="./js/scriptJulio.js"></script>
   </head>
   <body>
     <div id="flexWrapper">
+      <div id="capaHeader">
+      </div>
       <header>
-        <a href="Index.html"><img alt="Logo"></a>
-        <div id="searchLoginWrappper">
-          <input id="searchBox" type="text"><a href="#">Search</a><a href="login.html">Sign In / Register</a>
-        </div>
-        <div id="socialNetworkIconBarTop"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a></div>
-        <div id="menuBar">
-            <ul id="menuItemLvl1">
+        <!-- Menu -->
+        <div id="menuBar"> 
+          <input type="button" onclick="desplegarMenu(this.parentNode); openDrpdown(1);" value="☰" class="dropbtn" id="menuIcon" />
+            <ul id="menu1" class="dropdown-content">
               <li><a href="#">New Arrivals</a></li>
-              <li><a href="1nivel.html">All Sections
-                  <ul id="menuLvl2">
+              <li>
+                <input type="button" onclick="openDrpdown(2);" value="All Sections" class="dropbtn"/>
+                  <ul id="menu2" class="dropdown-content">
                     <li id="menuItemLvl2"><a href="segundoNivel.html">Section 1</a></li>
                     <li id="menuItemLvl2"><a href="segundoNivel.html">Section 2</a></li>
                     <li id="menuItemLvl2"><a href="segundoNivel.html">Section 3</a></li>
-                  </ul></a></li>
+                  </ul></li>
               <li><a href="#">Custom PC</a></li>
               <li><a href="#">Offers</a></li>
             </ul>
         </div>
-        <div id="cartWrapper"><a href="#">Cart</a></div>
+        <!-- LOGO -->
+        <a href="Index.html" id="logo"><img id="imgLogo" src="" alt="Logo" /></a>
+        <div id="searchWrapper">
+          <input id="searchBox" type="text"><a href="#">Search</a>
+        </div>
+        <div id="loginWrapper">
+          <a href="login.html">Sign In / Register</a>
+        </div><!--
+        <div id="socialNetworkIconBarTop"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a></div>-->
+        
+        <!--<div id="cartWrapper"><a href="#">Cart</a></div>-->
         </nav>
       </header>
       <main>

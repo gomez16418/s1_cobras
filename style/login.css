@@ -1,39 +1,45 @@
+/*Dar estilos a la lista*/
 
 ul.tab {
-    width: 55%;
+    width: 95%;
     list-style-type: none;
-    margin: 0;
+    margin: 0px;
     overflow: hidden;
     border: 1px solid #8fff00;
     background-color: #c7c8c9;
     border-bottom: none;
-    margin-bottom: 0px;
     height: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.tabs{
+    
 }
 
-ul.tab li{float: left;}
+/*Dar estilos a los elementos de la lista*/
+ul.tab li{float: left; width: 50%;}
 
 ul.tab li a {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 10px;
+    padding-bottom: 13px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 20px;
+    width: 100%;
+    
 }
 
-ul.tab li a:hover {background-color: #ddd;}
-ul.tab li a:focus, .active {background-color: whitesmoke;}
+ul.tab li a:hover {background-color: #8fff00;}
+ul.tab li a:focus, .active {background-color: whitesmoke; }
 
 
 body {
     display: flex;
     flex-flow: row wrap;
+    
 }
 
 body >div {
@@ -46,7 +52,7 @@ body >div {
 body > header{
     background: #0f1112;
     order: 1;
-    height: 100px;
+    height: 15vh;
     flex:100%;
 }
 
@@ -57,6 +63,8 @@ body > main{
     height: auto;
     flex: 100%;
     padding: 30px;
+    margin-bottom: auto;
+    
 }
 
 h1{
@@ -71,7 +79,7 @@ h1{
 
 .tabcontent{
     
-    width: 55%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     background: #c7c8c9;
@@ -79,6 +87,7 @@ h1{
     padding-right: 15px;
     border: 1px solid #8fff00;
     border-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 input[type=text],
@@ -102,7 +111,7 @@ input[type=submit]{
 .recuperarPass{
     padding: 15px;
     text-align: center;
-    width: 55%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     background: #c7c8c9;
@@ -114,4 +123,38 @@ label[for=user], label[for=password], label[for=newuser], label[for=newPass], la
 }
 
 
-
+@media screen and (min-width: 768px) {
+    body {
+        background-color: lightgreen;
+        
+    }
+    
+    .tabcontent{
+        width: 70%;
+    }
+    .recuperarPass{
+        width: 70%;
+    }
+    ul.tab{
+        width: 70%;
+    }
+    
+    label[for=user], label[for=password], label[for=newuser], label[for=newPass], label[for=newEmail]{
+        display: inline-block;
+        width: 7em;
+        text-align: right;
+        
+    }
+    
+    input[type=text],
+    input[type=password]{
+        width: 70%;
+        display: inline-block;
+        
+    }
+    
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: transparent;
+    }
+    
+}

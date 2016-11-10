@@ -31,16 +31,7 @@ button {
     width: 100%;
 }
 
-.cuerpo{
-    width: 55%;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-left:auto;
-    margin-right:auto;
-    background-color: #c7c8c9;
-    padding-bottom: 10px;
-    
-}
+
 
 .cabecera{
     text-align: center;
@@ -85,15 +76,8 @@ textarea {
 .consulta{
     height: 100px;
 }
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 400px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .extra{
-        display:none;
-    }
+
+
     .cuerpo{
     width: 95%;
     padding-left: 2%;
@@ -104,4 +88,63 @@ textarea {
     padding-bottom: 10px;
     
     }
+
+    .extra{
+        display:inline-block;
+        display:none;
+    }
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 993px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    
+    .cuerpo{
+    width: 55%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    }
+    .extra{
+        display:inline-block;
+        width: 8em;
+        vertical-align:top;
+        margin-top: 10px;
+    }
+    input[type=text], input[type=password],textarea[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    vertical-align:top;
+    
+}
+}
+@media screen and (max-width: 992px) and (min-width:769px) {    
+    .cuerpo{
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    }
+        .extra{
+        display:block;
+    }
+    
+    input[type=text], input[type=password],textarea[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 }

@@ -19,6 +19,7 @@ ul.tab {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 30px;
 }
 
 /*Dar estilos a los elementos de la lista*/
@@ -45,6 +46,7 @@ ul.tab li a:focus, .active {background-color: whitesmoke; }
 body {
     display: flex;
     flex-flow: row wrap;
+    height: 100vh;
     
 }
 
@@ -58,7 +60,7 @@ body >div {
 body > header{
     background: #545b68;
     order: 1;
-    height: 15vh;
+    height: 20%;
     flex:100%;
 }
 
@@ -66,16 +68,11 @@ body > header{
 body > main{
     background: #545b61;
     order: 2;
-    height: auto;
+    height: 80%;
     flex: 100%;
     padding: 30px;
     margin-bottom: auto;
     
-}
-
-h1{
-    color: #0f1112;
-    text-align: center;
 }
 
 
@@ -84,7 +81,6 @@ h1{
 }
 
 .tabcontent{
-    
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +90,9 @@ h1{
     border: 1px solid #8fff00;
     border-bottom: 0px;
     padding-bottom: 10px;
+    animation: fadeEffect 1.5s;
 }
+
 
 input[type=text],
 input[type=password]{
@@ -128,10 +126,16 @@ input[type=submit]:hover{
     margin-right: auto;
     background: #c7c8c9;
     border: 1px solid #8fff00;
+    
 }
 
 label[for=user], label[for=password], label[for=newuser], label[for=newPass], label[for=newEmail]{
     display: none;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
@@ -200,3 +204,5 @@ label[for=user], label[for=password], label[for=newuser], label[for=newPass], la
     }
     
 }
+
+

@@ -3,15 +3,14 @@
 ul.tab {
     width: 100%;
     list-style-type: none;
-    margin: 5px;
     overflow: hidden;
     border: 1px solid #8fff00;
     background-color: #c7c8c9;
     height: 45px;
     padding-left: 0px;
     padding-right: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px;
+    border-bottom: 0px;
 }
 .tabs{
     width: 95%;
@@ -50,12 +49,6 @@ body {
     
 }
 
-body >div {
-    width: 90%;
-    border-radius: 5px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 body > header{
     background: #545b68;
@@ -147,7 +140,7 @@ label[for=user], label[for=password], label[for=newuser], label[for=newPass], la
     .recuperarPass{
         width: 80%;
     }
-    ul.tab{
+    .tabs{
         width: 80%;
     }
     
@@ -181,7 +174,7 @@ label[for=user], label[for=password], label[for=newuser], label[for=newPass], la
     .recuperarPass{
         width: 70%;
     }
-    ul.tab{
+    .tabs{
         width: 70%;
     }
     

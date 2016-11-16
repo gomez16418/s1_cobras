@@ -48,3 +48,20 @@ window.onclick = function(event) {
     document.getElementById('menuBar').classList.remove('desplegado');
   }
 }
+/* Abrir Buscar */
+function buscarOpen(){
+    var x = document.getElementById("searchWrapper");
+    var y = document.getElementById("searchBox");
+    var z = document.getElementById("cerrarBuscar");
+    x.classList.add('buscarDivOpen');
+    y.classList.add('buscarOpen');
+    z.classList.add('mostrarX');
+}
+function buscarCerrar(){
+    var x = document.getElementById("searchWrapper");
+    var y = document.getElementById("searchBox");
+    var z = document.getElementById("cerrarBuscar");
+    x.classList.remove('buscarDivOpen');
+    y.classList.remove('buscarOpen');
+    z.classList.remove('mostrarX');
+}

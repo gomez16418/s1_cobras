@@ -10,8 +10,6 @@
   </head>
   <body>
     <div id="flexWrapper">
-      <div id="capaHeader">
-      </div>
       <header>
         <!-- Menu -->
         <div id="menuBar"> 
@@ -31,22 +29,24 @@
         </div>
         <!-- LOGO -->
         <a href="Index.html" id="logo"><img id="imgLogo" src="" alt="Logo" /></a>
-        <div id="searchWrapper">
-          <input id="searchBox" type="text"><a href="#">Search</a>
+        <div id="searchWrapper" class="">
+          <input id="searchBox" placeholder="Buscar..." type="text" class="">
+          <a id="cerrarBuscar" href="#" onclick="buscarCerrar()">x</a>
+          <a href="#" onclick="buscarOpen()">Search</a>
         </div>
         <div id="loginWrapper">
-          <a href="login.html">Sign In / Register</a>
-        </div><!--
-        <div id="socialNetworkIconBarTop"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a></div>-->
+          <a href="login.html">Sign In</a>
+        </div>
+        <div id="socialNetworkIconBarTop"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a></div>
         
-        <!--<div id="cartWrapper"><a href="#">Cart</a></div>-->
+        <div id="cartWrapper"><a href="#">Cart</a></div>
         </nav>
       </header>
       <main>
         <div id="sectionsContainer">
-          <section class="news"></section>
-          <section class="news"></section>
-          <section class="news"></section>
+          <section class="news">
+            
+          </section>
         </div>
         <div id="adsContainer"><a href="#"><img alt="Ads"></a></div>
       </main>
@@ -54,9 +54,15 @@
         <div class="div-footer"><a href="#">Return and Exchanges</a><a href="#">Terms Of Services</a><a href="contacto.html">Contact</a><a href="#">About</a>
         </div>
         <div class="div-footer">
-          <div id="div-map"><a href="localizacion.html">Company Info</a><a href="localizacion.html"><img alt="Map Location"></a></div>
-          <div id="socialNetworkIconBarBottom"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a>
-          </div>
+            <a id="mapLocationAnchor" href="localizacion.html">Company Location & Info</a>
+            <a href="localizacion.html">
+              <img id="mapLocationIcon" src="./style/media/images/icons/location_pin_icon.png" alt="Map location icon" alt="Map Location">
+            </a>
+        </div>
+        <div id="socialNetworkIconBarBottom" class="div-footer">
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/facebook_icon.png" alt="Facebook icon"></a>
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/twitter_icon.png" alt="Twitter icon"></a>
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/google_plus_icon.png" alt="Google plus icon"></a>
         </div>
         <div class="div-footer">
           <p>Lorem...</p>

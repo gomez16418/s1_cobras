@@ -3,55 +3,94 @@
   <head>
     <meta charset="utf-8">
     <title>Sign-in/Sign-up</title>
+    <link rel="stylesheet" href="style/login.css" type="text/css">
   </head>
+    
+    
   <body>
-    <div class="cabecera"><a href="Index.html"><img src="logo.jpg"></a>
-      <div class="social"><a href="https://twitter.com/"><img src="twitter.jpg"></a><a href="https://es-es.facebook.com/"><img src="facebook.jpg"></a></div>
-    </div>
-    <div class="cuerpo">
-      <div class="textoLogin">
-        <h1>Sign-in/Sign-up</h1>
-      </div>
-      <div class="entrar">
-        <form id="form-login" action="" method="post">
-          <p>
-            <label for="user">Usuario</label>
-            <input type="text" name="usuario" id="user">
-          </p>
-          <p>
-            <label for="password">Password</label>
-            <input type="password" name="pass" id="password">
-          </p>
-          <p>
-            <input type="checkbox" id="recordarPass">
-            <label for="recordarPass">Recordar contraseña</label>
-          </p>
-          <input type="submit" value="Entrar">
-        </form>
-      </div>
-      <div class="registro">
-        <form id="form-registro" action="" method="post">
-          <p>
-            <label for="newuser">Nombre Usuario</label>
-            <input type="text" name="usuario" id="newuser">
-          </p>
-          <p>
-            <label for="newPass">Password</label>
-            <input type="password" name="password" id="newPass">
-          </p>
-          <p>
-            <label for="newEmail">e-Mail</label>
-            <input type="text" name="email" id="newEmail">
-          </p>
-          <p>
-            <input type="checkbox" id="aceptar">
-            <label for="aceptar">He leído y acepto la política de privacidad</label>
-          </p>
-          <input type="submit" value="Registrarse">
-        </form>
-      </div>
-      <p></p>
-      <label for="recuperacionPass">¿Olvidó su contraseña?</label><a href="correoderecuperacion" id="recuperacionPass">Pulse aquí</a>
-    </div>
+      
+        <header><a href="Index.html"><img src="logo.jpg"></a>
+            <div class="social"><a href="https://twitter.com/"><img src="style/media/images/twitter.png"></a><a href="https://es-es.facebook.com/"><img src="style/media/images/facebook.png"></a></div>
+      </header>
+        <main>
+            <div class="tabs">
+                <ul class="tab">
+                    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'entrar')" id="default" >Entrar</a></li>
+                    <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</a></li>
+                </ul>
+            </div>
+            
+            <div id="entrar" class="tabcontent">
+            
+            <form id="form-login" >
+              <p>
+                <label for="user">Usuario</label>
+                <input type="text" name="usuario" id="user" placeholder="Usuario" required>
+              </p>
+              <p>
+                <label for="password">Password</label>
+                <input type="password" name="pass" id="password" placeholder="Contraseña" required>
+              </p>
+              <p>
+                <input type="checkbox" id="recordarPass">
+                <label for="recordarPass">Recordar contraseña</label>
+              </p>
+            <input type="submit" value="Entrar">
+            </form>
+            </div>
+            <div id="registrarse" class="tabcontent">
+            <p>* Los campos son oligatorios</p>
+            <form id="form-registro" action="" method="post">
+              <p>
+                <label for="newuser">Nombre Usuario</label>
+                <input type="text" name="usuario" id="newuser" placeholder="Nuevo usuario *" required>
+              </p>
+              <p>
+                <label for="newPass">Password</label>
+                <input type="password" name="password" id="newPass" placeholder="Contraseña *" required>
+              </p>
+              <p>
+                <label for="newEmail">e-Mail</label>
+                <input type="text" name="email" id="newEmail" placeholder="e-Mail *" required>
+              </p>
+              <p>
+                <input type="checkbox" id="aceptar">
+                <label for="aceptar">He leído y acepto la política de privacidad</label>
+              </p>
+                
+            <input type="submit" value="Registrarse">
+            </form>
+            </div>
+            
+            <div class="recuperarPass">
+                <label for="recuperacionPass">¿Olvidó su contraseña?</label><a href="#" id="recuperacionPass">Pulse aquí</a>
+            </div>
+    </main>
+      <script>
+        function openTab(evt, login)
+        {
+            var i, tabcontent, tablinks;
+            
+            tabcontent=document.getElementsByClassName("tabcontent");
+            for(i=0;i<tabcontent.length;i++)
+            {
+                tabcontent[i].style.display="none";
+            }
+            
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(login).style.display = "block";
+            evt.currentTarget.className += " active";
+            
+        }
+        
+        document.getElementById("default").click();
+        
+        
+    </script>
+      
   </body>
 </html>

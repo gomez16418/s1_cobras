@@ -52,10 +52,11 @@ body {
 
 
 body > header{
-    background: #545b68;
+    background: #545b61;
     order: 1;
     height: 20%;
     flex:100%;
+    border-bottom: 1px solid #c7c8c9;
 }
 
 

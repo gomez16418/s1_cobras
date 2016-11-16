@@ -1,0 +1,92 @@
+				html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+				body{line-height:1}
+				article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+				ul{list-style:none}
+				blockquote,q{quotes:none}
+				blockquote:before,blockquote:after,q:before,q:after{content:none}
+				a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+				ins{background-color:#ff9;color:#000;text-decoration:none}
+				mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+				del{text-decoration:line-through}
+				abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+				table{border-collapse:collapse;border-spacing:0}
+				hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+				input,select{vertical-align:middle}			
+			
+			
+						
+				
+				header, section, nav, main, footer{ 
+					background: #CCC;
+					border-radius: 7px;
+					margin:5px;
+					padding: 20px;	
+					width: 100vw;
+				}
+				 body > div > header{ 
+					order: 1;
+					height: 5vw;
+					flex: 0 1 100%;					
+				}
+				body > div > section, body > div > nav{ 
+					order: 2;
+					flex: 0 1 100%;					
+				}
+
+				.migas ul li{
+					display: inline-block;
+					margin-right: 15px;
+				}
+				 body > div > footer{ 
+					order: 6;
+					height: 5vw;
+					flex: 0 1 100%;					
+				}
+				.img div{
+					display: inline-block;
+					margin-right: 15px;					
+					height: 5px;				
+				}
+				main {
+					display:flex;
+					flex-flow:row wrap;
+					justify-content: space-around;
+				}
+				
+				nav {
+					display:flex;
+					flex-flow:row wrap;					
+				}
+				
+				.gal{
+					
+					flex: 0 0 48%;
+				}
+				
+				img {
+					width: 100%;
+				}
+				
+				.myDIV{
+					width: 100%;
+				}
+				
+@media screen and (min-width: 767px) {
+	body {
+		background-color: lightgreen;
+	}
+
+	.gal {
+		flex: 0 0 31%;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	body {
+		background-color: lightblue;
+	}
+	
+	.gal {
+		flex: 0 0 21%;
+	}
+}							

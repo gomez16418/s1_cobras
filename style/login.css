@@ -136,18 +136,18 @@ label[for=user], label[for=password], label[for=newuser], label[for=newPass], la
 @media screen and (min-width: 993px) {
     
     .tabcontent{
-        width: 80%;
+        width: 60%;
     }
     .recuperarPass{
-        width: 80%;
+        width: 60%;
     }
     .tabs{
-        width: 80%;
+        width: 60%;
     }
     
     label[for=user], label[for=password], label[for=newuser], label[for=newPass], label[for=newEmail]{
         display: inline-block;
-        width: 8em;
+        width: 6em;
         text-align: right;
         
     }

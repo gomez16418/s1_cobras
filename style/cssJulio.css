@@ -274,16 +274,15 @@ header a:visited {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	align-items: center;
+	align-items: top;
+	line-height: 
 	/*background: green;*/
 }
 #flexWrapper > footer > .div-footer:nth-child(2) > a {
 	font-size: large;
 	display: inline;
 	margin:5px;
-}
-#flexWrapper > footer > .div-footer:nth-child(2) #mapLocationAnchor {
-
+	line-height: 32px;
 }
 #flexWrapper > footer > .div-footer:nth-child(2) #mapLocationIcon {
 	max-width: 32px;
@@ -297,11 +296,54 @@ header a:visited {
 }
 #flexWrapper > footer > .div-footer:nth-child(3) > a {
 	margin: 5px;
-	margin-top: 10px;
-	margin-bottom: 0px;
 }
 #flexWrapper > footer > .div-footer:last-child{
 	order:4;
 	display: none;
 	/*background: red;*/
+}
+
+/* Query de Tablet */
+@media screen and (max-width: 992px) and (min-width:769px){
+
+	#flexWrapper > footer > .div-footer {
+		width: 50vw;
+		text-align: center;
+		margin: 0px;
+	}
+
+	#flexWrapper > footer > .div-footer:first-child{
+		order: 3;
+		width: 100vw;
+		/*background: blue;*/
+	}
+
+	#flexWrapper > footer > .div-footer:nth-child(3){
+		order:2;
+		/*background: yellow;*/
+	}
+}
+
+/* Query de Escritorio */
+@media screen and (min-width: 993px) {
+	#flexWrapper > footer > .div-footer {
+		width: calc(100vw / 3);
+		text-align: center;
+		margin: 0px;
+	}
+
+	#flexWrapper > footer > .div-footer:first-child{
+		order: 1;
+		/*background: blue;*/
+	}
+	#flexWrapper > footer > .div-footer:nth-child(3){
+		order:3;
+		align-items: top;
+		/*background: yellow;*/
+	}
+	#flexWrapper > footer > .div-footer:nth-child(2){
+		order: 2;
+		align-items: top;
+		/*background: green;*/
+	}
 }

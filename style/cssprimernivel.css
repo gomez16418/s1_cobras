@@ -71,9 +71,17 @@
 					width: 100%;
 				}
 				
+				header, main, nav, main, footer {
+					color: #0f1112;
+				}
+				section {
+					color: #8fff00;
+				}
+				
+				
 @media screen and (min-width: 767px) {
 	body {
-		background-color: lightgreen;
+		background-color: #0f1112;
 	}
 
 	.gal {
@@ -83,7 +91,7 @@
 
 @media screen and (min-width: 950px) {
 	body {
-		background-color: lightblue;
+		background-color: #0f1112;
 	}
 	
 	.gal {

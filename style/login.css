@@ -4,7 +4,6 @@ ul.tab {
     width: 100%;
     list-style-type: none;
     overflow: hidden;
-    border: 1px solid #8fff00;
     background-color: #c7c8c9;
     height: 45px;
     padding-left: 0px;
@@ -19,6 +18,9 @@ ul.tab {
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 30px;
+    background: #c7c8c9;
+    border: 1px solid #8fff00;
+    border-bottom: 0px;
 }
 
 /*Dar estilos a los elementos de la lista*/
@@ -34,7 +36,6 @@ ul.tab li a {
     transition: 0.3s;
     font-size: 20px;
     width: 100%;
-    
     
 }
 

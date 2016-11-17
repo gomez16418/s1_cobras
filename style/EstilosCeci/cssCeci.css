@@ -1,0 +1,316 @@
+html,body {
+    height:100%;
+	font-family: 'ABeeZee', sans-serif;
+	font-size:15px;
+}
+
+header {
+        
+    display:block;
+	background: rgb(143, 255, 0);
+	background: -moz-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
+	background: -webkit-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
+	background: -o-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
+	background: -ms-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
+	background: linear-gradient(120deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
+    padding:10px 0px;
+	color:#8fff00;
+}
+.migas{
+	color:#8fff00;
+	margin-bottom:30px;
+	text-align:left;
+}
+.migas a:active {
+    background-color: #c7c8c9;
+}
+.migas a:hover {
+    background-color: black;
+}
+
+.contenedor{
+	background:#545b61;
+	display:flex;
+	height:100%;
+	margin-left:0px;
+}
+section {
+    width: 100%;
+    background: #545b61;
+    float: left;
+    overflow: auto;
+    padding-bottom: 60px;
+    padding-top:30px;
+}
+.articulos{
+	text-align:justify;
+	font-size:15px;
+}
+.art2{
+	margin-left:10px;
+	margin-right:10px;		
+	width: 100px;
+	text-align:justify;
+}
+/*PESTAÑAS*/
+	.tab {
+		margin: 20px auto;
+		width: 90%;  /* Ancho del contenedor */
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	.tab input {
+	/*! height: 32px; */
+	width:30px;
+	display: none;
+}
+
+	.tab label {
+		cursor: pointer; 
+		font-size: 16px; 
+		padding: 0 10px; 
+		text-align: center; 
+		border-radius: 10px 10px 0 0;
+		background:black; 
+		display: inline-block;
+		margin: 0;
+	    font-size:10px;
+		height:36px;
+		color:#c7c8c9;
+	} 
+	  
+	.tab input:hover + label {
+		background: #ddd;  /* Fondo de las pestañas al pasar el cursor por encima */
+		color: #666;  /* Color del texto de las pestañas al pasar el cursor por encima */
+	}
+
+	.tab input:checked + label {
+		background: #8fff00;  /* Fondo de las pestañas al presionar */
+		color: black; /* Color de las pestañas al presionar */
+		z-index: 6;
+		-webkit-transition: .1s;
+		-moz-transition: .1s;
+		-o-transition: .1s;
+		-ms-transition: .1s;
+		height:36px;
+	}
+
+	.content {
+		background: #c7c8c9;  /* Fondo del contenido */
+		position: relative;
+		width: 100%;
+		height: 350px;  /* Alto del contenido */
+		padding: 15px;
+		z-index: 5;
+		border-radius: 0 5px 5px 5px;
+		text-align:justify;
+	}
+
+	.content div {
+		position: absolute;
+		z-index: -100;
+		opacity: 0;
+		transition: all linear 0.1s;
+	}
+
+	.tab input.tab-selector-1:checked ~ .content .content-1,
+	.tab input.tab-selector-2:checked ~ .content .content-2,
+	.tab input.tab-selector-3:checked ~ .content .content-3,
+	.tab input.tab-selector-4:checked ~ .content .content-4 {
+		z-index: 100;
+		opacity: 1;
+		-webkit-transition: all ease-out 0.2s 0.1s;
+		-moz-transition: all ease-out 0.2s 0.1s;
+		-o-transition: all ease-out 0.2s 0.1s;
+		-ms-transition: all ease-out 0.2s 0.1s;
+		margin-right:20px;
+	}
+footer {
+    position: relative;
+    margin-top: -50px;
+    height: 40px; 
+    padding:5px 0px;
+    clear: both;
+    background: #0f1112;
+    text-align: center;
+    color: #fff;
+}
+figure {
+    display: flex; 
+	margin: 0 auto;
+}
+img{
+	border-radius: 20px;
+	width:50%;
+	margin: 0 auto;
+	
+}
+.vide{
+	width:168px;
+	height:168px;
+}
+.grow:hover
+{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+}
+h3{
+	
+	text-shadow: 1px 2px 3px #8fff00, 3px 5px 3px #666;
+	text-align: center;
+}
+.carrito{
+	width:10%;
+	height:2%;
+	display:block;
+}
+
+/*Clases de w3*/
+.navegaImagen{
+	margin-top:50px;
+}
+.mySlides{
+	display:none;
+	margin:0 auto;
+	}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0; margin-top:5px;}
+span{
+	color:#8fff00;
+	border:1px  black !important
+}
+/*media queries*/
+
+@media screen and (min-width: 600px){
+	html, body{
+	background-color:#545b61;
+	font-size:20px;
+	}
+	.articulogrande{
+	width:80%;
+	background-color:#c7c8c9;
+	margin:0 auto;
+	border:10px inset #545b61;
+	}	
+	.carrito{
+		border:0px solid #8fff00;
+		border-radius:0px;
+		width:6%;
+		height:6%;
+		
+	}
+	.tab label {
+		cursor: pointer; 
+		font-size: 16px; 
+		padding: 0 15px; 
+		text-align: center; 
+		border-radius: 10px 10px 0 0;
+		display: inline-block;
+		margin: 0;
+		width: 23%;
+	    font-size:17px;
+	} 
+	.vide{
+	width:500px;
+	height:500px;
+	}
+}
+
+@media screen and (min-width: 900px){
+	html, body{
+	background-color:#545b61;
+	text-align:center;
+	font-size:25px;
+	}
+	.articulogrande{
+	width:75%;
+	background-color:#c7c8c9;
+	margin:0 auto;
+	border:10px inset #545b61; 
+	}
+	.carrito{
+		margin-bottom:20px;
+	}
+	.articulos{
+	margin: 0px 0px 2px 2px;
+	}
+	.art2{
+		font-size:1.1em;
+	}
+	.vide{
+	width:500px;
+	height:500px;
+	}
+	
+	/*PESTAÑAS*/
+	.tab {
+		margin: 20px auto;
+		width: 90%;  /* Ancho del contenedor */
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	.tab input {
+	width:30px;
+	display: none;
+	}
+
+	.tab label {
+		cursor: pointer; 
+		font-size: 16px; 
+		padding: 0 20px; 
+		text-align: center; 
+		border-radius: 10px 10px 0 0;
+		display: inline-block;
+		margin: 0;
+		width: 200px;
+	    font-size:20px;
+	} 
+	.tab input:hover + label {
+		background: #ddd;  /* Fondo de las pestañas al pasar el cursor por encima */
+		color: #666;  /* Color del texto de las pestañas al pasar el cursor por encima */
+	}
+
+	.tab input:checked + label {
+		background: #8fff00;  /* Fondo de las pestañas al presionar */
+		color: black; /* Color de las pestañas al presionar */
+		z-index: 6;
+		-webkit-transition: .1s;
+		-moz-transition: .1s;
+		-o-transition: .1s;
+		-ms-transition: .1s;
+	}
+
+	.content {
+		background: #c7c8c9;  /* Fondo del contenido */
+		position: relative;
+		width: 100%;
+		height: 350px;  /* Alto del contenido */
+		padding: 30px;
+		z-index: 5;
+		border-radius: 0 5px 5px 5px;
+		text-align:justify;
+	}
+
+	.content div {
+		position: absolute;
+		z-index: -100;
+		opacity: 0;
+		transition: all linear 0.1s;
+	}
+
+	.tab input.tab-selector-1:checked ~ .content .content-1,
+	.tab input.tab-selector-2:checked ~ .content .content-2,
+	.tab input.tab-selector-3:checked ~ .content .content-3,
+	.tab input.tab-selector-4:checked ~ .content .content-4{
+		z-index: 100;
+		opacity: 1;
+		-webkit-transition: all ease-out 0.2s 0.1s;
+		-moz-transition: all ease-out 0.2s 0.1s;
+		-o-transition: all ease-out 0.2s 0.1s;
+		-ms-transition: all ease-out 0.2s 0.1s;
+		margin-right:20px;
+	}
+}

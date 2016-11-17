@@ -12,7 +12,8 @@
     <div id="flexWrapper">
       <header>
         <!-- Menu -->
-        <div id="menuBar"> 
+        <div id="menuBar">
+          <h1>MENU</h1>
           <input type="button" onclick="desplegarMenu(this.parentNode); openDrpdown(1);" value="☰" class="dropbtn" id="menuIcon" />
             <ul id="menu1" class="dropdown-content">
               <li><a href="#">New Arrivals</a></li>
@@ -28,17 +29,20 @@
             </ul>
         </div>
         <!-- LOGO -->
-        <a href="Index.html" id="logo"><img id="imgLogo" src="" alt="Logo" /></a>
+        <a href="Index.html" id="logo"><img id="imgLogo" src="./style/media/images/logo.jpg" alt="Logo" /></a>
         <div id="searchWrapper" class="">
           <input id="searchBox" placeholder="Buscar..." type="text" class="">
           <a id="cerrarBuscar" href="#" onclick="buscarCerrar()">x</a>
           <a href="#" onclick="buscarOpen()">Search</a>
         </div>
+        <!-- Tablet y escritorio -->
+        <div id="searchWrapperBig" class="">
+          <input id="searchBoxBig" placeholder="Buscar..." type="text" class="">
+          <a href="#" onclick="">Search</a>
+        </div>
         <div id="loginWrapper">
           <a href="login.html">Sign In</a>
-        </div>
-        <div id="socialNetworkIconBarTop"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a></div>
-        
+        </div>        
         <div id="cartWrapper"><a href="#">Cart</a></div>
         </nav>
       </header>

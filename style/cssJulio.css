@@ -35,7 +35,6 @@ input,select{vertical-align:middle}
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
-	position: relative;
 	margin:0;
 	height: 60px;
 	background: #0f1112;
@@ -59,6 +58,9 @@ input,select{vertical-align:middle}
 	display: inline-flex;
 	flex-flow: row wrap;
 	align-items: center;
+}
+#flexWrapper > header > #searchWrapperBig {
+	display: none;
 }
 #flexWrapper > header > #searchWrapper {
 	order: 3;
@@ -137,6 +139,18 @@ input,select{vertical-align:middle}
 	/*order: 1;*/
 	/*========*/
 	z-index: 100;
+}
+
+#flexWrapper > header > #menuBar >  h1 {
+	display: none;
+	position: absolute;
+	height: 60px;
+	line-height: 60px;
+	right: 0;
+	font-size: xx-large;
+	margin-right: 10px;
+	color: #75CF00;
+	text-shadow: -1px -1px 1px black;
 }
 
 .dropdown-content {
@@ -231,10 +245,9 @@ header a:visited {
 	left:60px;
 }
 
-/*#imgLogo {
-	height: 80px;
-	width: 150px;
-}*/
+#imgLogo {
+	height: 60px;
+}
 
 /*==================*/
 /*      FOOTER      */
@@ -275,7 +288,6 @@ header a:visited {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: top;
-	line-height: 
 	/*background: green;*/
 }
 #flexWrapper > footer > .div-footer:nth-child(2) > a {
@@ -306,6 +318,54 @@ header a:visited {
 /* Query de Tablet */
 @media screen and (max-width: 992px) and (min-width:769px){
 
+	/*===================*/
+	/* ELEMENTOS DEL HEADER */
+	/*===================*/
+
+	#flexWrapper > header {
+		height: 120px;
+	}
+	#flexWrapper > header > * {
+	}
+	#flexWrapper > header > #menuBar {
+		width: 100%;
+		top: 60px;
+		border-radius: 0;
+	}
+	#flexWrapper > header > #menuBar >  h1 {
+		display: initial;
+	}
+	
+	#flexWrapper > header > #logo {
+		width: 100%;
+		left: 0;
+	}
+	#flexWrapper > header > #logo > img {
+		height: 60px;
+	}
+
+	#flexWrapper > header > #searchWrapperBig {
+		display: initial;
+		order: 3;
+		display: inline-flex;
+		flex-flow: row wrap;
+		align-items: center;
+
+		right: 160px;
+	}
+	#flexWrapper > header > #searchWrapperBig > a {
+		font-size: x-large;	
+		margin-left: 5px;
+	}
+
+	#flexWrapper > header > #searchWrapper {
+		display: none;
+	}
+
+
+	/*==================*/
+	/*      FOOTER      */
+	/*==================*/
 	#flexWrapper > footer > .div-footer {
 		width: 50vw;
 		text-align: center;
@@ -326,6 +386,56 @@ header a:visited {
 
 /* Query de Escritorio */
 @media screen and (min-width: 993px) {
+	/*===================*/
+	/* ELEMENTOS DEL HEADER */
+	/*===================*/
+
+	#flexWrapper > header {
+		height: 120px;
+	}
+	#flexWrapper > header > * {
+	}
+	#flexWrapper > header > #menuBar {
+		width: 100%;
+		top: 60px;
+		border-radius: 0;
+	}
+	#flexWrapper > header > #menuBar >  h1 {
+		display: initial;
+	}
+	
+	#flexWrapper > header > #logo {
+		width: 100%;
+		left: 0;
+	}
+	#flexWrapper > header > #logo > img {
+		height: 60px;
+	}
+
+	#flexWrapper > header > #searchWrapperBig {
+		display: initial;
+		order: 3;
+		display: inline-flex;
+		flex-flow: row wrap;
+		align-items: center;
+
+		right: 160px;
+	}
+	#flexWrapper > header > #searchWrapperBig > a {
+		font-size: x-large;	
+		margin-left: 5px;
+	}
+
+	#flexWrapper > header > #searchWrapper {
+		display: none;
+	}
+
+
+
+
+	/*==================*/
+	/*      FOOTER      */
+	/*==================*/
 	#flexWrapper > footer > .div-footer {
 		width: calc(100vw / 3);
 		text-align: center;

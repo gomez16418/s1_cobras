@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"/>
+<title>COBRAS SHOP</title>
+<link rel="stylesheet" href="style/EstilosCeci/cssCeci.css">	
+<link rel="stylesheet" href="style/EstilosCeci/w3Ceci.css">    
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+</head>
+
+<body>
+	<main>	
+		<!-- Cabecera -->
+		<header>
+			<img src="style/media/images/snImagenes/cobras.gif" alt="logo" style="width:10%"/> 
+			<h3>JULIO</h3>
+		</header>
+		<div class="contenedor">
+			<!-- Contenido -->
+			<section>
+				<nav class="migas">
+					  <a href="Index.html">Inicio</a>
+					  <a href="1nivel.html">Nivel 1</a>
+					  <a href="sn.html">Nivel 2</a>
+				</nav>
+				<figure>
+					<div class="w3-content w3-display-container">
+						<img class="mySlides grow" src="style/media/images/snImagenes/i7.jpg">
+						<img class="mySlides grow" src="style/media/images/snImagenes/i7caja.jpg">
+						<img class="mySlides grow" src="style/media/images/snImagenes/i7cajagrande.jpg">
+						<img class="mySlides grow" src="style/media/images/snImagenes/i7pega.jpg">
+						<iframe class="mySlides vide"  src="https://www.youtube.com/embed/k8-bCwcZqDo" frameborder="0" allowfullscreen></iframe><br><br>
+						<div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+							<div class="navegaImagen">
+								<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="color:#8fff00">&#10094;
+								</div>
+								<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)"  style="color:#8fff00">&#10095;
+								</div>
+								<span class="w3-badge demo w3-hover-white" onclick="currentDiv(1)"></span>
+								<span class="w3-badge demo w3-hover-white" onclick="currentDiv(2)"></span>
+								<span class="w3-badge demo w3-hover-white" onclick="currentDiv(3)"></span>
+								<span class="w3-badge demo w3-hover-white" onclick="currentDiv(4)"></span>
+								<span class="w3-badge demo w3-hover-white" onclick="currentDiv(4)"></span>
+							</div>
+						</div>
+					</div>
+				</figure>
+				<article>
+					<h3>Intel i7-6700K 4.0Ghz Box</h3>
+					<h3> 329 € </h3> <img class="carrito" src="style/media/images/snImagenes/com.png"><br>
+					<div class="articulogrande">
+						<div class="tab">
+							<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+							<label for="tab-1" class="tab-label-1">Descripcion</label>						   
+							<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+							<label for="tab-2" class="tab-label-2">Requisitos</label>
+							<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+							<label for="tab-3" class="tab-label-3">Comentarios</label>  
+							<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+							<label for="tab-4" class="tab-label-4">Preguntas</label>
+							<div class="content">
+								
+								<div class="content-1"							
+								<p class="art2">Fabricados en 14 nanómetros, estos Intel Core i7 repiten el proceso instaurado en los Broadwell y cuenta con 4 núcleos a 4GHz y un turbo que aumenta la frecuencia a  4.2GHz. También posee 8MB de memoria caché L3.El i7 dispone de 16 líneas PICe, aprovechando al máximo el rendimiento de una tarjeta gráfica operando a x16, o permitiendo el uso compartido de una solución SLI e en x8/x8 en una instalación dual, x8/x4/x4 en una triple AMD Crossfire.</p>
+
+								</div>
+								<div class="content-2">
+								<p  class="articulos">El bus ha sido mejorado para aumentar el intercambio entre el procesador y la placa base un 40% más rápido con Direct Media Interface 3.0 (DMI). Además del incremento de velocidad, también es posible conectar más dispositivos al chipset i7 6700.
+								Otra de las innovaciones, quizá la más destacable, es el soporte para memoria RAM DDR4 bajo la tecnología dual-channel y compatible con los modelos de hasta 2133MHz y una capacidad máxima de 64GB DDR4.</p>
+								</div>
+								<div class="content-3">
+									Contenido3
+								</div>
+								<div class="content-4">
+									Contenido4
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+			</section>
+		</div>
+			
+        <!-- Pie de pagina -->
+        <footer>
+               <p>Julio</p>
+        </footer>
+	</main>	
+	<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				 dots[i].className = dots[i].className.replace(" w3-lime", "");
+			  }
+			  x[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " w3-lime";
+			}
+	</script>
+
+</body>
+</html>

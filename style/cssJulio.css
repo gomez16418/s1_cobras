@@ -200,7 +200,7 @@ header a:visited {
 	transition: height .4s ease;
 }
 #menu1.dropdown-content.show {
-	height: calc(100vh - 60px);
+	height: calc(30px*7);
 }
 #menu2.dropdown-content.show {
 	height: calc(30px*3);
@@ -434,8 +434,6 @@ header a:visited {
 	#flexWrapper > header > #searchWrapper {
 		display: none;
 	}
-
-
 
 
 	/*==================*/

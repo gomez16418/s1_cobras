@@ -242,7 +242,7 @@ header a:visited {
 /*==================*/
 
 #logo {
-	left:60px;
+	left:65px;
 }
 
 #imgLogo {
@@ -323,13 +323,14 @@ header a:visited {
 	/*===================*/
 
 	#flexWrapper > header {
-		height: 120px;
+		height: 200px;
 	}
 	#flexWrapper > header > * {
+		top: 80px;
 	}
 	#flexWrapper > header > #menuBar {
 		width: 100%;
-		top: 60px;
+		top: 140px;
 		border-radius: 0;
 	}
 	#flexWrapper > header > #menuBar >  h1 {
@@ -338,10 +339,11 @@ header a:visited {
 	
 	#flexWrapper > header > #logo {
 		width: 100%;
-		left: 0;
+		left: 15px;
+		top:40px;
 	}
 	#flexWrapper > header > #logo > img {
-		height: 60px;
+		height: 120px;
 	}
 
 	#flexWrapper > header > #searchWrapperBig {
@@ -361,6 +363,7 @@ header a:visited {
 	#flexWrapper > header > #searchWrapper {
 		display: none;
 	}
+
 
 
 	/*==================*/
@@ -391,13 +394,14 @@ header a:visited {
 	/*===================*/
 
 	#flexWrapper > header {
-		height: 120px;
+		height: 200px;
 	}
 	#flexWrapper > header > * {
+		top: 80px;
 	}
 	#flexWrapper > header > #menuBar {
 		width: 100%;
-		top: 60px;
+		top: 140px;
 		border-radius: 0;
 	}
 	#flexWrapper > header > #menuBar >  h1 {
@@ -406,10 +410,11 @@ header a:visited {
 	
 	#flexWrapper > header > #logo {
 		width: 100%;
-		left: 0;
+		left: 15px;
+		top:40px;
 	}
 	#flexWrapper > header > #logo > img {
-		height: 60px;
+		height: 120px;
 	}
 
 	#flexWrapper > header > #searchWrapperBig {

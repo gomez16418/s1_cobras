@@ -4,25 +4,60 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"/>
 <title>COBRAS SHOP</title>
+<link rel="stylesheet" href="style/cssJulio.css">
+<script src="./js/scriptJulio.js"></script>
 <link rel="stylesheet" href="style/EstilosCeci/cssCeci.css">	
 <link rel="stylesheet" href="style/EstilosCeci/w3Ceci.css">    
 <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
 </head>
 
 <body>
-	<main>	
-		<!-- Cabecera -->
+	<div id="flexWrapper">
+		<!-- JULIO-------------------------------------------------------------- -->
 		<header>
-			<img src="style/media/images/snImagenes/cobras.gif" alt="logo" style="width:10%"/> 
-			<h3>JULIO</h3>
+        <!-- Menu -->
+				<div id="menuBar">
+				  <h1>MENU</h1>
+				  <input type="button" onclick="desplegarMenu(this.parentNode); openDrpdown(1);" value="☰" class="dropbtn" id="menuIcon" />
+					<ul id="menu1" class="dropdown-content">
+					  <li><a href="#">New Arrivals</a></li>
+					  <li>
+						<input type="button" onclick="openDrpdown(2);" value="All Sections" class="dropbtn"/>
+						  <ul id="menu2" class="dropdown-content">
+							<li id="menuItemLvl2"><a href="segundoNivel.html">Section 1</a></li>
+							<li id="menuItemLvl2"><a href="segundoNivel.html">Section 2</a></li>
+							<li id="menuItemLvl2"><a href="segundoNivel.html">Section 3</a></li>
+						  </ul></li>
+					  <li><a href="#">Custom PC</a></li>
+					  <li><a href="#">Offers</a></li>
+					</ul>
+				</div>
+				<!-- LOGO -->
+				<a href="index.html" id="logo"><img id="imgLogo" src="./style/media/images/cobras.gif" alt="Logo" /></a>
+				<div id="searchWrapper" class="">
+				  <input id="searchBox" placeholder="Buscar..." type="text" class="">
+				  <a id="cerrarBuscar" href="#" onclick="buscarCerrar()">x</a>
+				  <a href="#" onclick="buscarOpen()">Search</a>
+				</div>
+				<!-- Tablet y escritorio -->
+				<div id="searchWrapperBig" class="">
+				  <input id="searchBoxBig" placeholder="Buscar..." type="text" class="">
+				  <a href="#" onclick="">Search</a>
+				</div>
+				<div id="loginWrapper">
+				  <a href="login.html">Sign In</a>
+				</div>        
+				<div id="cartWrapper"><a href="#">Cart</a></div>
 		</header>
+		<!------------------JULIO--------------->
+		<main>
 		<div class="contenedor">
 			<!-- Contenido -->
 			<section>
 				<nav class="migas">
-					  <a href="Index.html">Inicio</a>
-					  <a href="1nivel.html">Nivel 1</a>
-					  <a href="sn.html">Nivel 2</a>
+					  <a  style="color:#8fff00" href="Index.html">Inicio</a>
+					  <a  style="color:#8fff00" href="1nivel.html">Nivel 1</a>
+					  <a  style="color:#8fff00" href="sn.html">Nivel 2</a>
 				</nav>
 				<figure>
 					<div class="w3-content w3-display-container">
@@ -82,12 +117,41 @@
 
 			</section>
 		</div>
+		</main>
 			
         <!-- Pie de pagina -->
-        <footer>
-               <p>Julio</p>
-        </footer>
-	</main>	
+         <footer>
+        <div class="div-footer">
+	<a href="#">Return and Exchanges</a><a href="#">Terms Of Services</a><a href="contacto.html">Contact</a><a href="#">About</a>
+</div>
+<div class="div-footer">
+	<a id="mapLocationAnchor" href="localizacion.html">Company Location & Info</a>
+	<a href="localizacion.html">
+		<img id="mapLocationIcon" src="./style/media/images/icons/location_pin_icon.png" alt="Map location icon" alt="Map Location">
+		</a>
+	</div>
+	<div id="socialNetworkIconBarBottom" class="div-footer">
+		<a href="#">
+			<img class="snIcon" src="./style/media/images/icons/facebook_icon.png" alt="Facebook icon">
+			</a>
+			<a href="#">
+				<img class="snIcon" src="./style/media/images/icons/twitter_icon.png" alt="Twitter icon">
+				</a>
+				<a href="#">
+					<img class="snIcon" src="./style/media/images/icons/google_plus_icon.png" alt="Google plus icon">
+					</a>
+				</div>
+				<div class="div-footer">
+					<p>
+						<a href="http://jigsaw.w3.org/css-validator/check/referer">
+							<img style="border:0;width:88px;height:31px"
+                      src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                      alt="¡CSS Válido!" />
+						</a>
+					</p>
+				</div>
+      </footer>
+	</div>	
 	<script>
 			var slideIndex = 1;
 			showDivs(slideIndex);

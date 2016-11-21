@@ -4,20 +4,9 @@ html,body {
 	font-size:15px;
 }
 
-header {
-        
-    display:block;
-	background: rgb(143, 255, 0);
-	background: -moz-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
-	background: -webkit-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
-	background: -o-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
-	background: -ms-linear-gradient(30deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
-	background: linear-gradient(120deg, rgb(143, 255, 0) 32%, rgb(119, 119, 119) 70%);
-    padding:10px 0px;
-	color:#8fff00;
-}
 .migas{
 	color:#8fff00;
+	margin-left:10px;
 	margin-bottom:30px;
 	text-align:left;
 }
@@ -126,21 +115,12 @@ section {
 		-ms-transition: all ease-out 0.2s 0.1s;
 		margin-right:20px;
 	}
-footer {
-    position: relative;
-    margin-top: -50px;
-    height: 40px; 
-    padding:5px 0px;
-    clear: both;
-    background: #0f1112;
-    text-align: center;
-    color: #fff;
-}
+
 figure {
     display: flex; 
 	margin: 0 auto;
 }
-img{
+.contendor img{
 	border-radius: 20px;
 	width:50%;
 	margin: 0 auto;
@@ -156,7 +136,7 @@ img{
 -ms-transform: scale(1.2);
 transform: scale(1.2);
 }
-h3{
+.contenedor h3{
 	
 	text-shadow: 1px 2px 3px #8fff00, 3px 5px 3px #666;
 	text-align: center;
@@ -165,6 +145,7 @@ h3{
 	width:10%;
 	height:2%;
 	display:block;
+	margin:0 auto;
 }
 
 /*Clases de w3*/
@@ -221,7 +202,6 @@ span{
 @media screen and (min-width: 900px){
 	html, body{
 	background-color:#545b61;
-	text-align:center;
 	font-size:25px;
 	}
 	.articulogrande{
@@ -243,7 +223,7 @@ span{
 	width:500px;
 	height:500px;
 	}
-	
+
 	/*PESTAÑAS*/
 	.tab {
 		margin: 20px auto;

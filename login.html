@@ -9,8 +9,15 @@
     
   <body>
       
-        <header><a href="Index.html"><img src="logo.jpg"></a>
-            <div class="social"><a href="https://twitter.com/"><img src="style/media/images/twitter.png"></a><a href="https://es-es.facebook.com/"><img src="style/media/images/facebook.png"></a></div>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="style/media/images/cobras.gif"></a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/"><img src="style/media/images/icons/twitter_icon.png"></a>
+                <a href="https://es-es.facebook.com/"><img src="style/media/images/icons/facebook_icon.png"></a>
+                <a href="https://plus.google.com/collections/featured?hl=es"><img src="style/media/images/icons/google_plus_icon.png"></a>
+            </div>
       </header>
         <main>
             <div class="tabs">
@@ -42,15 +49,19 @@
             <p>* Los campos son oligatorios</p>
             <form id="form-registro" action="" method="post">
               <p>
-                <label for="newuser">Nombre Usuario</label>
+                <label for="newuser">Nombre Usuario *</label>
                 <input type="text" name="usuario" id="newuser" placeholder="Nuevo usuario *" required>
               </p>
               <p>
-                <label for="newPass">Password</label>
+                <label for="newPass">Password *</label>
                 <input type="password" name="password" id="newPass" placeholder="Contraseña *" required>
               </p>
+                <p>
+                <label for="newPass">Repetir contraseña *</label>
+                <input type="password" name="password" id="newPass" placeholder="Repetir contraseña *" required>
+              </p>
               <p>
-                <label for="newEmail">e-Mail</label>
+                <label for="newEmail">e-Mail *</label>
                 <input type="text" name="email" id="newEmail" placeholder="e-Mail *" required>
               </p>
               <p>

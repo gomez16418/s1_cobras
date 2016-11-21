@@ -26,8 +26,6 @@ input,select{vertical-align:middle}
 	flex-flow: row wrap;
 }
 #flexWrapper > * {
-	background: #AAA;
-	margin:5px;
 	/*====================*/
 	width: 100vw;
 }
@@ -287,7 +285,7 @@ header a:visited {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	align-items: top;
+	align-items: flex-start;
 	/*background: green;*/
 }
 #flexWrapper > footer > .div-footer:nth-child(2) > a {
@@ -311,9 +309,55 @@ header a:visited {
 }
 #flexWrapper > footer > .div-footer:last-child{
 	order:4;
-	display: none;
 	/*background: red;*/
 }
+
+/* NEWS */
+
+#newsWrapper {
+	width:100%;
+	overflow: hidden;
+
+	border-bottom: 1px solid black;
+	box-shadow: 0px 1px 1px black;
+}
+#newsWrapper > .news-slider {
+	width: 300%;
+	display: block;
+	position: relative;
+	margin: auto;
+
+}
+
+#newsWrapper > .news-slider > img {
+	display: block;
+	position: relative;
+	left:0;
+	float: left;
+	height: 15vw;
+	width: calc(100%/3);
+
+	animation: sliderMove 20s infinite;
+	-moz-animation: sliderMove 20s infinite;
+	-o-animation: sliderMove 20s infinite;
+	-webkit-animation: sliderMove 20s infinite;
+	-ms-animation: sliderMove 20s infinite;
+} 
+
+#sectionsContainer > #news-articles {
+	
+}
+
+@keyframes sliderMove {
+	0% { left:0px; }
+	28% { left:0%; }
+	33% { left: calc(-100%/3); }
+	61% { left: calc(-100%/3); }
+	66% { left: calc((-100%/3)*2); }
+	95% { left: calc((-100%/3)*2); }
+	100% { left:0%; }
+}
+
 
 /* Query de Tablet */
 @media screen and (max-width: 992px) and (min-width:769px){
@@ -339,11 +383,12 @@ header a:visited {
 	
 	#flexWrapper > header > #logo {
 		width: 100%;
-		left: 15px;
+		left: 0;
 		top:40px;
 	}
 	#flexWrapper > header > #logo > img {
 		height: 120px;
+		margin-left:15px;
 	}
 
 	#flexWrapper > header > #searchWrapperBig {
@@ -385,6 +430,12 @@ header a:visited {
 		order:2;
 		/*background: yellow;*/
 	}
+
+	#flexWrapper > footer > .div-footer:last-child{
+		order:4;
+		width: 100%;
+		/*background: red;*/
+	}
 }
 
 /* Query de Escritorio */
@@ -410,11 +461,12 @@ header a:visited {
 	
 	#flexWrapper > header > #logo {
 		width: 100%;
-		left: 15px;
+		left: 0;
 		top:40px;
 	}
 	#flexWrapper > header > #logo > img {
 		height: 120px;
+		margin-left:15px;
 	}
 
 	#flexWrapper > header > #searchWrapperBig {
@@ -440,7 +492,7 @@ header a:visited {
 	/*      FOOTER      */
 	/*==================*/
 	#flexWrapper > footer > .div-footer {
-		width: calc(100vw / 3);
+		width: calc(100% / 3);
 		text-align: center;
 		margin: 0px;
 	}
@@ -451,12 +503,18 @@ header a:visited {
 	}
 	#flexWrapper > footer > .div-footer:nth-child(3){
 		order:3;
-		align-items: top;
+		align-items: flex-start;
 		/*background: yellow;*/
 	}
 	#flexWrapper > footer > .div-footer:nth-child(2){
 		order: 2;
-		align-items: top;
+		align-items: flex-start;
 		/*background: green;*/
+	}
+
+	#flexWrapper > footer > .div-footer:last-child{
+		order:4;
+		width: 100%;
+		/*background: red;*/
 	}
 }

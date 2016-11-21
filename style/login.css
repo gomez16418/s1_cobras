@@ -44,6 +44,7 @@ ul.tab li a:focus, .active {background-color: whitesmoke; }
 
 
 body {
+    margin: 0px;
     display: flex;
     flex-flow: row wrap;
     height: 100vh;

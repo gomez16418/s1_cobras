@@ -1,35 +1,20 @@
-				html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-				body{line-height:1}
-				article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-				ul{list-style:none}
-				blockquote,q{quotes:none}
-				blockquote:before,blockquote:after,q:before,q:after{content:none}
-				a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-				ins{background-color:#ff9;color:#000;text-decoration:none}
-				mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-				del{text-decoration:line-through}
-				abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-				table{border-collapse:collapse;border-spacing:0}
-				hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-				input,select{vertical-align:middle}			
-			
-			
+
+				ul{list-style:none}			
 						
 				
-				header, section, nav, main, footer{ 
+				section, nav, main{ 
 					background: #545b61;
 					border-radius: 7px;
 					margin:5px;
 					padding: 20px;	
 					width: 100vw;
 				}
-				 body > div > header{ 
+				 body > div{ 
 					order: 1;
 					height: 5vw;
 					flex: 0 1 100%;					
 				}
 				body > div > section, body > div > nav{ 
-					order: 2;
 					flex: 0 1 100%;					
 				}
 
@@ -37,7 +22,7 @@
 					display: inline-block;
 					margin-right: 15px;
 				}
-				 body > div > footer{ 
+				 body > div{ 
 					order: 6;
 					height: 5vw;
 					flex: 0 1 100%;					
@@ -63,7 +48,7 @@
 					flex: 0 0 48%;
 				}
 				
-				img {
+				main img {
 					width: 100%;
 				}
 				
@@ -71,8 +56,14 @@
 					width: 100%;
 				}
 				
-				header, main, nav, main, footer {
+				main, nav, {
 					color: #0f1112;
+				}
+				
+				.migas {
+					color: #8fff00;
+					margin-top: 1em;
+					margin-left: 1em;
 				}
 				section {
 					color: #8fff00;

@@ -1,7 +1,279 @@
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password],textarea[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.combo
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cabecera{
+    text-align: center;
+    color:#8fff00;
+    text-shadow: 1px 1px black, -1px -1px black,	1px -1px black, -1px 1px black, 1px 0px black, -1px -0px black,	0px -1px black, -0px 1px black, 2px 2px 1px black;
+    padding-top: 1px;
+}
+.contenedor{
+    background-color: #545b61;
+    padding: 20px;
+}
+.pagina{
+    background-color: #0f1112;
+}
+.loader {
+  display: none;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  border-top: 16px solid #3498db;
+  border-top: 16px solid #3498db;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear inifinite;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+ 
+}
+textarea {
+    resize: none;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.consulta{
+    height: 100px;
+}
+
+
+.img{
+    width:95%;
+    height:100%;
+    display: inline-block;
+    vertical-align:top;
+    margin-left:10px;
+}
+.txt{
+    width:100%;
+    display: inline-block;
+    text-align:center;
+}
+.localizacion{
+    width:100%;
+    height:40%;
+}
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .extra{
+        display:none;
+    }
+    .cuerpo{
+    width: 95%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    
+    }
+    .mapa{
+    margin-right:5px;
+    margin-left:5px;
+}
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 992px) and (min-width:769px) {
+.cuerpo{
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    
+}
+.mapa{
+    margin-right:50px;
+    margin-left:50px;
+}
+    .slideshow-container{
+    width:50%;
+    height:100%;
+    display: inline-block;
+    vertical-align:top;
+    margin-left:10px;
+}
+.txt{
+    width:45%;
+    display: inline-block;
+    text-align:center;
+    text-align: right;
+}
+.localizacion{
+    width:100%;
+    height:40%;
+}
+}
+@media screen and (min-width: 993px) {
+.cuerpo{
+    width: 65%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    
+}
+.mapa{
+    margin-right:50px;
+    margin-left:50px;
+}
+    .slideshow-container{
+    width:50%;
+    height:100%;
+    display: inline-block;
+    vertical-align:top;
+    margin-left:10px;
+    padding-bottom: 10px;
+}
+.txt{
+    width:45%;
+    display: inline-block;
+    text-align: right;
+}
+.localizacion{
+    width:100%;
+    height:40%;
+}
+}
+
 /*
 *  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
 */
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 ul{list-style:none}
@@ -17,7 +289,7 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 *, *::before, *::after {
-	font-family: 'ABeeZee', sans-serif;
+	font-family: sans-serif;
 	box-sizing: content-box;
 }
 
@@ -26,6 +298,7 @@ input,select{vertical-align:middle}
 	flex-flow: row wrap;
 }
 #flexWrapper > * {
+	margin:5px;
 	/*====================*/
 	width: 100vw;
 }
@@ -39,7 +312,11 @@ input,select{vertical-align:middle}
 
 	box-shadow: 1px 0px 5px black;
 }
-
+/*#flexWrapper > #capaHeader
+{
+	height: 50px;
+}
+*/
 /*===================*/
 /* ELEMENTOS DEL HEADER */
 /*===================*/
@@ -127,7 +404,7 @@ input,select{vertical-align:middle}
 /*       MENU        */
 /*===================*/
 #flexWrapper > header > #menuBar {
-	background: #3B4247;
+	background: #545b61;
 	border-radius: 5px;
 	/*========*/
 	/*order: 1;*/
@@ -142,7 +419,7 @@ input,select{vertical-align:middle}
 	line-height: 60px;
 	right: 0;
 	font-size: xx-large;
-	padding-right: 10px;
+	margin-right: 10px;
 	color: #75CF00;
 	text-shadow: -1px -1px 1px black;
 }
@@ -151,6 +428,7 @@ input,select{vertical-align:middle}
 	display: block;
 	overflow: hidden;
 	height: 0vh;
+	width: 100vw;
 }
 
 .dropdown-content li{
@@ -205,7 +483,7 @@ header a:visited {
 }
 
 .dropbtn {
-    background-color: #3B4247;
+    background-color: #545b61;
     color: white;
     font-size: 22px;
     border: none;
@@ -280,7 +558,7 @@ header a:visited {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: top;
 	/*background: green;*/
 }
 #flexWrapper > footer > .div-footer:nth-child(2) > a {
@@ -304,77 +582,9 @@ header a:visited {
 }
 #flexWrapper > footer > .div-footer:last-child{
 	order:4;
+	display: none;
 	/*background: red;*/
 }
-
-/* NEWS */
-
-#newsWrapper {
-	width:100%;
-	overflow: hidden;
-
-	border-bottom: 1px solid black;
-	box-shadow: 0px 1px 1px black;
-}
-#newsWrapper > .news-slider {
-	width: 300%;
-	display: block;
-	position: relative;
-	margin: auto;
-
-}
-
-#newsWrapper > .news-slider > img {
-	display: block;
-	position: relative;
-	left:0;
-	float: left;
-	height: 15vw;
-	width: calc(100%/3);
-
-	animation: sliderMove 20s infinite;
-	-moz-animation: sliderMove 20s infinite;
-	-o-animation: sliderMove 20s infinite;
-	-webkit-animation: sliderMove 20s infinite;
-	-ms-animation: sliderMove 20s infinite;
-} 
-
-#sectionsContainer > #news-articles {
-	display: flex;
-	flex-flow: row wrap;
-	padding: 15px;
-
-	background: #989C9F;
-}
-
-#sectionsContainer > #news-articles > article {
-	box-sizing: content-box;
-
-	width: 40%;
-	padding: 5%;
-	text-align: justify;
-	font-size: large;
-	color: white;
-}
-
-#sectionsContainer > #news-articles > article > h2 {
-	font-size: x-large;
-	margin:0 auto;
-	margin-bottom: 10px;
-	text-align: center;
-	color: #75CF00;
-	text-shadow: -1px -1px 1px black;
-}
-@keyframes sliderMove {
-	0% { left:0px; }
-	28% { left:0%; }
-	33% { left: calc(-100%/3); }
-	61% { left: calc(-100%/3); }
-	66% { left: calc((-100%/3)*2); }
-	95% { left: calc((-100%/3)*2); }
-	100% { left:0%; }
-}
-
 
 /* Query de Tablet */
 @media screen and (max-width: 992px) and (min-width:769px){
@@ -400,12 +610,11 @@ header a:visited {
 	
 	#flexWrapper > header > #logo {
 		width: 100%;
-		left: 0;
+		left: 15px;
 		top:40px;
 	}
 	#flexWrapper > header > #logo > img {
 		height: 120px;
-		margin-left:15px;
 	}
 
 	#flexWrapper > header > #searchWrapperBig {
@@ -447,12 +656,6 @@ header a:visited {
 		order:2;
 		/*background: yellow;*/
 	}
-
-	#flexWrapper > footer > .div-footer:last-child{
-		order:4;
-		width: 100%;
-		/*background: red;*/
-	}
 }
 
 /* Query de Escritorio */
@@ -478,12 +681,11 @@ header a:visited {
 	
 	#flexWrapper > header > #logo {
 		width: 100%;
-		left: 0;
+		left: 15px;
 		top:40px;
 	}
 	#flexWrapper > header > #logo > img {
 		height: 120px;
-		margin-left:15px;
 	}
 
 	#flexWrapper > header > #searchWrapperBig {
@@ -509,7 +711,7 @@ header a:visited {
 	/*      FOOTER      */
 	/*==================*/
 	#flexWrapper > footer > .div-footer {
-		width: calc(100% / 3);
+		width: calc(100vw / 3);
 		text-align: center;
 		margin: 0px;
 	}
@@ -520,18 +722,14 @@ header a:visited {
 	}
 	#flexWrapper > footer > .div-footer:nth-child(3){
 		order:3;
-		align-items: flex-start;
+		align-items: top;
 		/*background: yellow;*/
 	}
 	#flexWrapper > footer > .div-footer:nth-child(2){
 		order: 2;
-		align-items: flex-start;
+		align-items: top;
 		/*background: green;*/
 	}
-
-	#flexWrapper > footer > .div-footer:last-child{
-		order:4;
-		width: 100%;
-		/*background: red;*/
-	}
+	
 }
+

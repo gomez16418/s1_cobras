@@ -18,7 +18,6 @@ input,select{vertical-align:middle}
 
 *, *::before, *::after {
 	font-family: sans-serif;
-	box-sizing: content-box;
 }
 
 #flexWrapper {

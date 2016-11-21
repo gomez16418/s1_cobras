@@ -2,44 +2,72 @@
 <!--compilar pug -P Contacto.pug-->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-with, initial-scale=1">
-    <link rel=stylesheet href="style/cssEdu/contacto.css">
+<div class="pagina">
+<head>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Contacto</title>
-    <header>
-      <nav id="top-nav"><a href="Index.html"><img alt="Logo"></a>
-        <input type="text"><a href="#">Search</a><a href="login.html">Sign In / Register</a>
-      </nav>
-      <nav id="bottom-nav">
-        <div id="socialNetworkIconBarTop"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a>
-        </div>
-        <div id="menuBar">
-          <ul id="menuItemLvl1">
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="1nivel.html">All Sections
-                <ul id="menuLvl2">
-                  <li id="menuItemLvl2"><a href="segundoNivel.html">Section 1</a></li>
-                  <li id="menuItemLvl2"><a href="segundoNivel.html">Section 2</a></li>
-                  <li id="menuItemLvl2"><a href="segundoNivel.html">Section 3</a></li>
-                </ul></a></li>
-            <li><a href="#">Custom PC</a></li>
-            <li><a href="#">Offers</a></li>
-          </ul>
-        </div>
-        <div id="div-cart"><a href="#">Cart</a></div>
-      </nav>
-    </header>
+    <link rel=stylesheet href="style/cssJulio.css">
+	<link rel=stylesheet href="style/cssEdu/contacto.css">
+	<script type="text/javascript" src="javascript/contacto.js"></script>
+    <script src="./js/scriptJulio.js"></script>
+	
   </head>
+  <body>
+    <div id="flexWrapper">
+      <header>
+        <!-- Menu -->
+        <div id="menuBar">
+          <h1>MENU</h1>
+          <input type="button" onclick="desplegarMenu(this.parentNode); openDrpdown(1);" value="☰" class="dropbtn" id="menuIcon" />
+            <ul id="menu1" class="dropdown-content">
+              <li><a href="#">New Arrivals</a></li>
+              <li>
+                <input type="button" onclick="openDrpdown(2);" value="All Sections" class="dropbtn"/>
+                  <ul id="menu2" class="dropdown-content">
+                    <li id="menuItemLvl2"><a href="segundoNivel.html">Section 1</a></li>
+                    <li id="menuItemLvl2"><a href="segundoNivel.html">Section 2</a></li>
+                    <li id="menuItemLvl2"><a href="segundoNivel.html">Section 3</a></li>
+                  </ul></li>
+              <li><a href="#">Custom PC</a></li>
+              <li><a href="#">Offers</a></li>
+            </ul>
+        </div>
+        <!-- LOGO -->
+        <a href="index.html" id="logo"><img id="imgLogo" src="./style/media/images/cobras.gif" alt="Logo" /></a>
+        <div id="searchWrapper" class="">
+          <input id="searchBox" placeholder="Buscar..." type="text" class="">
+          <a id="cerrarBuscar" href="#" onclick="buscarCerrar()">x</a>
+          <a href="#" onclick="buscarOpen()">Search</a>
+        </div>
+        <!-- Tablet y escritorio -->
+        <div id="searchWrapperBig" class="">
+          <input id="searchBoxBig" placeholder="Buscar..." type="text" class="">
+          <a href="#" onclick="">Search</a>
+        </div>
+        <div id="loginWrapper">
+          <a href="login.html">Sign In</a>
+        </div>        
+        <div id="cartWrapper"><a href="#">Cart</a></div>
+        </nav>
+      </header>
+      <main>
+        <div id="sectionsContainer">
+          <section class="news">
+            
+          </section>
+        </div>
+        <div id="adsContainer"><a href="#"><img alt="Ads"></a></div>
+      </main>
   <body></body>
   <div class="contenedor">
-    <div class="cabezera">
-      <h1>Formulario de contacto</h1>
-    </div>
     <div class="cuerpo">
+    <div class="cabecera">
+      <h2>Formulario de contacto</h2>
+    </div>
       <p>
-        <label for="cs1">Tema de consulta</label>
-        <select id="cs1">
+        <select class="combo" id="cs1">
           <option value="Problemas con el registro">Problemas con el registro</option>
           <option value="Problemas con mi saldo">Problemas con mi saldo</option>
           <option value="Error al finalizar la compra">Error al finalizar la compra</option>
@@ -47,38 +75,47 @@
         </select>
       </p>
       <p>
-        <label for="cs2">Nombre</label>
-        <input type="text" name="Nombre" id="cs2">
+        <label class="extra" for="cs2">Nombre</label>
+        <input placeholder="Nombre" type="text" name="Nombre" id="cs2" required>
       </p>
       <p>
-        <label for="cs3">Correo electrónico</label>
-        <input type="text" name="Correo" id="cs3">
+        <label class="extra" for="cs3">Correo Electrónico</label>
+        <input placeholder="Correo Electrónico" type="text" name="Correo" id="cs3" required>
       </p>
       <p>
-        <label for="cs4">Consulta</label>
-        <input type="text" name="Consulta" id="cs4">
+        <label class="extra" for="cs4">Teléfono</label>
+        <input placeholder="Teléfono"type="text" name="Teléfono" id="cs4" required>
       </p>
       <p>
-        <label for="cs5">Teléfono</label>
-        <input type="text" name="Teléfono" id="cs5">
+        <label class="extra" for="cs5">Consulta</label>
+          <textarea class="consulta" placeholder="Consulta" type="text" name="Consulta" id="cs5" required></textarea>
       </p>
       <input type="checkbox" name="agreement" id="input1" checked="checked">
       <label for="input1">He leído y acepto los términos de privacidad y las condiciones de uso</label>
-      <div class="boton">
-        <button type="submit">Entrar</button>
+      <div class="boton" id="btn">
+          <button type="button" onclick="ocultarBoton()">Entrar</button>
+      </div>
+      <div class="loader" id="load">
+      </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <div class="div-footer"><a href="#">Return and Exchanges</a><a href="#">Terms Of Services</a><a href="contacto.html">Contact</a><a href="#">About</a>
-    </div>
-    <div class="div-footer">
-      <div id="div-map"><a href="localizacion.html">Company Info</a><a href="localizacion.html"><img alt="Map Location"></a></div>
-      <div id="socialNetworkIconBarBottom"><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">g+</a>
-      </div>
-    </div>
-    <div class="div-footer">
-      <p>Lorem...</p>
-    </div>
-  </footer>
+      <footer>
+        <div class="div-footer"><a href="#">Return and Exchanges</a><a href="#">Terms Of Services</a><a href="contacto.html">Contact</a><a href="#">About</a>
+        </div>
+        <div class="div-footer">
+            <a id="mapLocationAnchor" href="localizacion.html">Company Location & Info</a>
+            <a href="localizacion.html">
+              <img id="mapLocationIcon" src="./style/media/images/icons/location_pin_icon.png" alt="Map location icon" alt="Map Location">
+            </a>
+        </div>
+        <div id="socialNetworkIconBarBottom" class="div-footer">
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/facebook_icon.png" alt="Facebook icon"></a>
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/twitter_icon.png" alt="Twitter icon"></a>
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/google_plus_icon.png" alt="Google plus icon"></a>
+        </div>
+        <div class="div-footer">
+          <p>Lorem...</p>
+        </div>
+      </footer>
+</div>
 </html>

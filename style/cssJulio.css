@@ -1,0 +1,462 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+*, *::before, *::after {
+	font-family: sans-serif;
+	box-sizing: content-box;
+}
+
+#flexWrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+#flexWrapper > * {
+	background: #AAA;
+	margin:5px;
+	/*====================*/
+	width: 100vw;
+}
+#flexWrapper > header {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	margin:0;
+	height: 60px;
+	background: #0f1112;
+
+	box-shadow: 1px 0px 5px black;
+}
+/*#flexWrapper > #capaHeader
+{
+	height: 50px;
+}
+*/
+/*===================*/
+/* ELEMENTOS DEL HEADER */
+/*===================*/
+#flexWrapper > header > * {
+	position: absolute;
+	height: 60px;
+}
+#flexWrapper > header > a {
+	order: 2;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+#flexWrapper > header > #searchWrapperBig {
+	display: none;
+}
+#flexWrapper > header > #searchWrapper {
+	order: 3;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	right: 160px;
+
+	transition: right .2s ease;
+}
+#flexWrapper > header > #searchWrapper.buscarDivOpen {
+	width: 100vw;
+	right: 0;
+	z-index: 200;
+
+	background:  #0f1112;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+#flexWrapper > header > #searchWrapper > a {
+	font-size: x-large;	
+}
+#flexWrapper > header > #searchWrapper #cerrarBuscar {
+	display: none;
+}
+#flexWrapper > header > #searchWrapper #cerrarBuscar.mostrarX {
+	display: initial;
+	position:absolute;
+	right:110px;
+}
+#flexWrapper > header > #searchWrapper > input {
+	display: none;
+}
+#flexWrapper > header > #searchWrapper > input.buscarOpen {
+	display: initial;
+	flex:1;
+	margin-left: 30px;
+	margin-right: 15px;
+}
+#flexWrapper > header > #loginWrapper {
+	order: 4;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	right: 70px;
+}
+#flexWrapper > header > #loginWrapper > a {
+	font-size: x-large;		
+}
+
+#flexWrapper > header > #socialNetworkIconBarTop {
+	display: none;
+}
+#flexWrapper > header > #cartWrapper {
+	order: 5;
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	right: 10px;
+}
+#flexWrapper > header > #cartWrapper > a {
+	font-size: x-large;
+}
+
+
+/*===================*/
+/*       MENU        */
+/*===================*/
+#flexWrapper > header > #menuBar {
+	background: #545b61;
+	border-radius: 5px;
+	/*========*/
+	/*order: 1;*/
+	/*========*/
+	z-index: 100;
+}
+
+#flexWrapper > header > #menuBar >  h1 {
+	display: none;
+	position: absolute;
+	height: 60px;
+	line-height: 60px;
+	right: 0;
+	font-size: xx-large;
+	margin-right: 10px;
+	color: #75CF00;
+	text-shadow: -1px -1px 1px black;
+}
+
+.dropdown-content {
+	display: block;
+	overflow: hidden;
+	height: 0vh;
+	width: 100vw;
+}
+
+.dropdown-content li{
+	background-color: #989C9F;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    min-height: 30px;
+    text-align: left;
+}
+.dropdown-content li ul li {
+	background:#c7c8c9;
+}
+.dropdown-content li > input {
+	height: 30px;
+}
+.dropdown-content li > a {
+	line-height: 30px;
+	margin-left: 5px;
+	font-size: 18px;
+}
+a,
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: white;
+	text-shadow: -1px -1px 1px black;
+}
+header a,
+header a:link,
+header a:active,
+header a:visited {
+	text-decoration: none;
+	color: #75CF00;
+	text-shadow: -1px -1px 1px black;
+}
+#menu1.dropdown-content, #menu2.dropdown-content {
+	height: 0;
+	transition: height .4s ease;
+}
+#menu1.dropdown-content.show {
+	height: calc(30px*7);
+}
+#menu2.dropdown-content.show {
+	height: calc(30px*3);
+}
+#menuBar {
+	width:60px;
+}
+#menuBar.desplegado{
+}
+
+.dropbtn {
+    background-color: #545b61;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    height: 100%;
+    text-align: left;
+
+    color: #75CF00;
+	text-shadow: -1px -1px 1px black;
+}
+
+#menuIcon {
+	width:40px;
+	font-size: 40px;
+	text-align: left;
+	padding: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
+	color: #75CF00;
+	text-shadow: -1px -1px 1px black;
+}
+
+/*==================*/
+/*      LOGO        */
+/*==================*/
+
+#logo {
+	left:65px;
+}
+
+#imgLogo {
+	height: 60px;
+}
+
+/*==================*/
+/*      FOOTER      */
+/*==================*/
+
+#flexWrapper > footer {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	position: relative;
+	margin: 0;
+	bottom: 0;
+	height: auto;
+	background: #0f1112;
+
+	box-shadow: -1px 0px 5px black;
+}
+
+#flexWrapper > footer > .div-footer {
+	width: 100vw;
+	text-align: center;
+	margin: 0px;
+}
+#flexWrapper > footer > .div-footer > a {
+	display: block;
+	margin: 5px auto;
+}
+#flexWrapper > footer > .div-footer > a > .snIcon {
+	max-width: 32px;
+}
+#flexWrapper > footer > .div-footer:first-child{
+	order: 3;
+	/*background: blue;*/
+}
+#flexWrapper > footer > .div-footer:nth-child(2){
+	order: 2;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: top;
+	/*background: green;*/
+}
+#flexWrapper > footer > .div-footer:nth-child(2) > a {
+	font-size: large;
+	display: inline;
+	margin:5px;
+	line-height: 32px;
+}
+#flexWrapper > footer > .div-footer:nth-child(2) #mapLocationIcon {
+	max-width: 32px;
+}
+#flexWrapper > footer > .div-footer:nth-child(3){
+	order:1;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	/*background: yellow;*/
+}
+#flexWrapper > footer > .div-footer:nth-child(3) > a {
+	margin: 5px;
+}
+#flexWrapper > footer > .div-footer:last-child{
+	order:4;
+	display: none;
+	/*background: red;*/
+}
+
+/* Query de Tablet */
+@media screen and (max-width: 992px) and (min-width:769px){
+
+	/*===================*/
+	/* ELEMENTOS DEL HEADER */
+	/*===================*/
+
+	#flexWrapper > header {
+		height: 200px;
+	}
+	#flexWrapper > header > * {
+		top: 80px;
+	}
+	#flexWrapper > header > #menuBar {
+		width: 100%;
+		top: 140px;
+		border-radius: 0;
+	}
+	#flexWrapper > header > #menuBar >  h1 {
+		display: initial;
+	}
+	
+	#flexWrapper > header > #logo {
+		width: 100%;
+		left: 15px;
+		top:40px;
+	}
+	#flexWrapper > header > #logo > img {
+		height: 120px;
+	}
+
+	#flexWrapper > header > #searchWrapperBig {
+		display: initial;
+		order: 3;
+		display: inline-flex;
+		flex-flow: row wrap;
+		align-items: center;
+
+		right: 160px;
+	}
+	#flexWrapper > header > #searchWrapperBig > a {
+		font-size: x-large;	
+		margin-left: 5px;
+	}
+
+	#flexWrapper > header > #searchWrapper {
+		display: none;
+	}
+
+
+
+	/*==================*/
+	/*      FOOTER      */
+	/*==================*/
+	#flexWrapper > footer > .div-footer {
+		width: 50vw;
+		text-align: center;
+		margin: 0px;
+	}
+
+	#flexWrapper > footer > .div-footer:first-child{
+		order: 3;
+		width: 100vw;
+		/*background: blue;*/
+	}
+
+	#flexWrapper > footer > .div-footer:nth-child(3){
+		order:2;
+		/*background: yellow;*/
+	}
+}
+
+/* Query de Escritorio */
+@media screen and (min-width: 993px) {
+	/*===================*/
+	/* ELEMENTOS DEL HEADER */
+	/*===================*/
+
+	#flexWrapper > header {
+		height: 200px;
+	}
+	#flexWrapper > header > * {
+		top: 80px;
+	}
+	#flexWrapper > header > #menuBar {
+		width: 100%;
+		top: 140px;
+		border-radius: 0;
+	}
+	#flexWrapper > header > #menuBar >  h1 {
+		display: initial;
+	}
+	
+	#flexWrapper > header > #logo {
+		width: 100%;
+		left: 15px;
+		top:40px;
+	}
+	#flexWrapper > header > #logo > img {
+		height: 120px;
+	}
+
+	#flexWrapper > header > #searchWrapperBig {
+		display: initial;
+		order: 3;
+		display: inline-flex;
+		flex-flow: row wrap;
+		align-items: center;
+
+		right: 160px;
+	}
+	#flexWrapper > header > #searchWrapperBig > a {
+		font-size: x-large;	
+		margin-left: 5px;
+	}
+
+	#flexWrapper > header > #searchWrapper {
+		display: none;
+	}
+
+
+	/*==================*/
+	/*      FOOTER      */
+	/*==================*/
+	#flexWrapper > footer > .div-footer {
+		width: calc(100vw / 3);
+		text-align: center;
+		margin: 0px;
+	}
+
+	#flexWrapper > footer > .div-footer:first-child{
+		order: 1;
+		/*background: blue;*/
+	}
+	#flexWrapper > footer > .div-footer:nth-child(3){
+		order:3;
+		align-items: top;
+		/*background: yellow;*/
+	}
+	#flexWrapper > footer > .div-footer:nth-child(2){
+		order: 2;
+		align-items: top;
+		/*background: green;*/
+	}
+}

@@ -1,0 +1,153 @@
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password],textarea[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.combo
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
+
+
+.cabecera{
+    text-align: center;
+    color:#8fff00;
+    text-shadow: 1px 1px black, -1px -1px black,	1px -1px black, -1px 1px black, 1px 0px black, -1px -0px black,	0px -1px black, -0px 1px black, 2px 2px 1px black;
+}
+.contenedor{
+    background-color: #545b61;
+    padding: 20px;
+}
+.pagina{
+    background-color: #0f1112;
+}
+.loader {
+  display: none;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  border-top: 16px solid #3498db;
+  border-top: 16px solid #3498db;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear inifinite;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+ 
+}
+textarea {
+    resize: none;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.consulta{
+    height: 100px;
+}
+
+
+    .cuerpo{
+    width: 95%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    
+    }
+
+    .extra{
+        display:inline-block;
+        display:none;
+    }
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 993px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    
+    .cuerpo{
+    width: 75%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    }
+    .extra{
+        display:inline-block;
+        width: 8em;
+        vertical-align:top;
+        margin-top: 10px;
+    }
+    input[type=text], input[type=password],textarea[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    vertical-align:top;
+    }
+
+}
+@media screen and (max-width: 992px) and (min-width:769px) {    
+    .cuerpo{
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #c7c8c9;
+    padding-bottom: 10px;
+    }
+        .extra{
+        display:block;
+    }
+    
+    input[type=text], input[type=password],textarea[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+}

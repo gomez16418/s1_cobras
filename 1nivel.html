@@ -3,16 +3,51 @@
 		<head>
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name=viewport content="width=device-width, initial-scale=1">
 			<title> Primer Nivel</title>	
 			<link rel="stylesheet" href="style/w3.css">
 			<link rel="stylesheet" type="text/css" href="style/cssprimernivel.css">				
 			<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-		
+			<link rel=stylesheet href="style/cssJulio.css">
+			<script src="./js/scriptJulio.js"></script>
 		</head>
 		<body>
 			<div id="flexWrapper">
 				<header>
-						
+					        <!-- Menu -->
+        <div id="menuBar">
+          <h1>MENU</h1>
+          <input type="button" onclick="desplegarMenu(this.parentNode); openDrpdown(1);" value="?" class="dropbtn" id="menuIcon" />
+            <ul id="menu1" class="dropdown-content">
+              <li><a href="#">New Arrivals</a></li>
+              <li>
+                <input type="button" onclick="openDrpdown(2);" value="All Sections" class="dropbtn"/>
+                  <ul id="menu2" class="dropdown-content">
+                    <li id="menuItemLvl2"><a href="segundoNivel.html">Section 1</a></li>
+                    <li id="menuItemLvl2"><a href="segundoNivel.html">Section 2</a></li>
+                    <li id="menuItemLvl2"><a href="segundoNivel.html">Section 3</a></li>
+                  </ul></li>
+              <li><a href="#">Custom PC</a></li>
+              <li><a href="#">Offers</a></li>
+            </ul>
+        </div>
+        <!-- LOGO -->
+        <a href="index.html" id="logo"><img id="imgLogo" src="./style/media/images/cobras.gif" alt="Logo" /></a>
+        <div id="searchWrapper" class="">
+          <input id="searchBox" placeholder="Buscar..." type="text" class="">
+          <a id="cerrarBuscar" href="#" onclick="buscarCerrar()">x</a>
+          <a href="#" onclick="buscarOpen()">Search</a>
+        </div>
+        <!-- Tablet y escritorio -->
+        <div id="searchWrapperBig" class="">
+          <input id="searchBoxBig" placeholder="Buscar..." type="text" class="">
+          <a href="#" onclick="">Search</a>
+        </div>
+        <div id="loginWrapper">
+          <a href="login.html">Sign In</a>
+        </div>        
+        <div id="cartWrapper"><a href="#">Cart</a></div>
+        </nav>	
 				</header>
 				<section class="migas">
 					<ul>						
@@ -89,7 +124,22 @@
 					</a>
 				</p>
 				<footer>
-				
+					        <div class="div-footer"><a href="#">Return and Exchanges</a><a href="#">Terms Of Services</a><a href="contacto.html">Contact</a><a href="#">About</a>
+        </div>
+        <div class="div-footer">
+            <a id="mapLocationAnchor" href="localizacion.html">Company Location & Info</a>
+            <a href="localizacion.html">
+              <img id="mapLocationIcon" src="./style/media/images/icons/location_pin_icon.png" alt="Map location icon" alt="Map Location">
+            </a>
+        </div>
+        <div id="socialNetworkIconBarBottom" class="div-footer">
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/facebook_icon.png" alt="Facebook icon"></a>
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/twitter_icon.png" alt="Twitter icon"></a>
+          <a href="#"><img class="snIcon" src="./style/media/images/icons/google_plus_icon.png" alt="Google plus icon"></a>
+        </div>
+        <div class="div-footer">
+          <p>Lorem...</p>
+        </div>
 				</footer>
 			</div>		
 		</body>

@@ -15,7 +15,6 @@
 					flex: 0 1 100%;					
 				}
 				body > div > section, body > div > nav{ 
-					order: 2;
 					flex: 0 1 100%;					
 				}
 
@@ -49,7 +48,7 @@
 					flex: 0 0 48%;
 				}
 				
-				img {
+				main img {
 					width: 100%;
 				}
 				
@@ -57,8 +56,14 @@
 					width: 100%;
 				}
 				
-				main, nav, main {
+				main, nav, {
 					color: #0f1112;
+				}
+				
+				.migas {
+					color: #8fff00;
+					margin-top: 1em;
+					margin-left: 1em;
 				}
 				section {
 					color: #8fff00;
